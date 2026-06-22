@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-white font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent text-ink;
+  }
+}
+
+@layer components {
+  /* Label: Space Grotesk uppercase, tracking amplio, semibold */
+  .label {
+    @apply text-xs font-semibold uppercase tracking-label font-sans;
+  }
+
+  /* Línea fina como separador visual — color acento amarillo */
+  .accent-line {
+    @apply h-px w-12 bg-accent;
+  }
+
+  /* Punto bordo — detalle decorativo junto a labels */
+  .brand-dot {
+    @apply inline-block h-2 w-2 rounded-full bg-brand;
+  }
+
+  /* Botón primario — amarillo oscuro + texto negro, rounded cuadrado */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-accent
+      px-8 py-4 text-sm font-bold uppercase tracking-label text-ink
+      transition-all duration-200 hover:bg-accent-hover hover:-translate-y-px;
+  }
+
+  /* Botón secundario sobre fondo oscuro — outline blanco */
+  .btn-secondary-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-white/30
+      px-8 py-4 text-sm font-bold uppercase tracking-label text-white
+      transition-all duration-200 hover:border-white hover:bg-white hover:text-ink;
+  }
+
+  /* Botón secundario sobre fondo claro — outline ink */
+  .btn-secondary-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-ink/20
+      px-8 py-4 text-sm font-bold uppercase tracking-label text-ink
+      transition-all duration-200 hover:border-ink hover:bg-ink hover:text-white;
+  }
+
+  /* Botón ghost bordo — outline rojo, para variantes de énfasis medio */
+  .btn-ghost-brand {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-brand
+      px-8 py-4 text-sm font-bold uppercase tracking-label text-brand
+      transition-all duration-200 hover:bg-brand hover:text-white;
+  }
+}

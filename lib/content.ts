@@ -1,0 +1,354 @@
+/**
+ * Banco de contenido del sitio de Santiago Rocca.
+ * Todo el copy vive aquí, estructurado por sección, para que las páginas
+ * y los componentes solo consuman datos y nunca lleven texto embebido.
+ */
+
+// ---------------------------------------------------------------------------
+// Navegación y datos globales
+// ---------------------------------------------------------------------------
+
+export const site = {
+  name: "Santiago Rocca",
+  logo: "SR",
+  tagline: "Desarrollo personal con propósito",
+};
+
+export type NavLink = { label: string; href: string };
+
+export const navLinks: NavLink[] = [
+  { label: "Inicio", href: "/" },
+  { label: "Sobre mí", href: "/sobre-mi" },
+  { label: "Vive para Contarlo", href: "/vive-para-contarlo" },
+  { label: "Libro", href: "/libro" },
+  { label: "Comunidad", href: "/comunidad" },
+  { label: "Recursos", href: "/recursos" },
+  { label: "Contacto", href: "/contacto" },
+];
+
+export const social = {
+  instagram: { label: "Instagram", href: "#" },
+  youtube: { label: "YouTube", href: "#" },
+  spotify: { label: "Spotify", href: "#" },
+};
+
+// ---------------------------------------------------------------------------
+// Quién es Santiago / Misión
+// ---------------------------------------------------------------------------
+
+export const about = {
+  bio: "Santiago Rocca es emprendedor, autor, divulgador del desarrollo personal y estudiante permanente del comportamiento humano. Dedica gran parte de su tiempo a estudiar desarrollo personal, comunicación, marketing, comportamiento humano y todas aquellas disciplinas que ayudan a las personas a crecer y alcanzar una mejor versión de sí mismas.",
+  mission:
+    "Ayudar a las personas a mejorar su vida mediante el desarrollo personal, entendiendo cómo funciona su mente, su comportamiento y su propósito para construir una vida más consciente.",
+};
+
+// ---------------------------------------------------------------------------
+// Inicio
+// ---------------------------------------------------------------------------
+
+export const home = {
+  hero: {
+    eyebrow: "Desarrollo personal",
+    title: "Convertite en la mejor versión de vos mismo",
+    subtitle: "Aprendizajes, herramientas y conversaciones que transforman.",
+    image: "/images/hero-placeholder.jpg",
+    primaryCta: { label: "Conocé mi historia", href: "/sobre-mi" },
+    secondaryCta: { label: "Escuchá el podcast", href: "/vive-para-contarlo" },
+  },
+  // Frase de impacto (sección blanca) — usa la misión de Santiago.
+  impact: {
+    eyebrow: "Mi misión",
+    quote: about.mission,
+  },
+  pillars: {
+    eyebrow: "Pilares",
+    title: "En qué te puedo ayudar",
+    subtitle:
+      "Seis áreas que sostienen el crecimiento personal y que atraviesan todo mi trabajo.",
+    // El campo `icon` mapea a un ícono de lucide-react en PillarsGrid.
+    items: [
+      {
+        name: "Mentalidad",
+        description: "Reprogramá tus creencias y fortalecé tu forma de pensar.",
+        icon: "Brain",
+      },
+      {
+        name: "Hábitos",
+        description: "Diseñá rutinas que sostienen el cambio en el tiempo.",
+        icon: "Repeat",
+      },
+      {
+        name: "Comunicación",
+        description: "Expresá tus ideas con claridad y conectá de verdad.",
+        icon: "MessagesSquare",
+      },
+      {
+        name: "Propósito",
+        description: "Encontrá el rumbo que le da sentido a tu vida.",
+        icon: "Compass",
+      },
+      {
+        name: "Productividad",
+        description: "Hacé que tu tiempo y tu energía trabajen a tu favor.",
+        icon: "Zap",
+      },
+      {
+        name: "Bienestar",
+        description: "Cuidá tu cuerpo y tu mente para sostener tu crecimiento.",
+        icon: "HeartPulse",
+      },
+    ],
+  },
+  // Bloque "Quién es Santiago" (sección blanca, 2 columnas).
+  whoIs: {
+    eyebrow: "Quién soy",
+    title: "Santiago Rocca",
+    paragraph: about.bio,
+    image: "/images/santiago-placeholder.jpg",
+    cta: { label: "Conocé mi historia", href: "/sobre-mi" },
+  },
+  // Preview del podcast (sección oscura).
+  podcastPreview: {
+    eyebrow: "El podcast",
+    cta: { label: "Ver todos los episodios", href: "/vive-para-contarlo" },
+    episodes: [
+      {
+        number: "001",
+        title: "Cómo superar la adversidad y volver más fuerte",
+        guest: "Invitado por confirmar",
+        duration: "58 min",
+      },
+      {
+        number: "002",
+        title: "Construir hábitos que realmente duran",
+        guest: "Invitado por confirmar",
+        duration: "1 h 12 min",
+      },
+      {
+        number: "003",
+        title: "El poder de comunicar con propósito",
+        guest: "Invitado por confirmar",
+        duration: "47 min",
+      },
+    ],
+  },
+  // CTA final (sección con fondo acento).
+  communityCta: {
+    title: "Sumate a la comunidad",
+    text: "Recibí reflexiones, resúmenes de libros, recomendaciones y desafíos directamente en tu WhatsApp. Un espacio para crecer todos los días.",
+    cta: { label: "Unirme a la comunidad", href: "/comunidad" },
+  },
+};
+
+// ---------------------------------------------------------------------------
+// Sobre mí — historia personal
+// ---------------------------------------------------------------------------
+
+export const story = {
+  eyebrow: "Sobre mí",
+  title: "Mi historia",
+  milestones: [
+    "Durante el colegio tuvo dificultades académicas y no encontraba un rumbo claro.",
+    "Durante la pandemia descubrió el desarrollo personal.",
+    "Uno de los momentos más importantes fue realizar el Seminario Fénix de Brian Tracy.",
+    "A partir de ese momento comenzó a trabajar en sus creencias, hábitos, mentalidad y propósito.",
+    "Desde entonces dedica gran parte de su tiempo a estudiar, aplicar y compartir conocimientos.",
+  ],
+
+  // Bloques narrativos para la página de scroll storytelling
+  chapters: {
+    comoEmpezó: {
+      eyebrow: "El comienzo",
+      title: "Cómo empezó todo",
+      paragraphs: [
+        "Durante el colegio no encontraba un rumbo claro. Las materias no le llamaban la atención, los resultados académicos no acompañaban y la pregunta de qué hacer con su vida parecía no tener respuesta.",
+        "Era fácil sentirse perdido en un sistema pensado para encajar en un molde. Santiago era curioso, activo y lleno de energía, pero ninguna de esas cualidades encontraba su lugar dentro de las aulas.",
+        "Ese período, aunque difícil, plantó una semilla importante: la certeza de que el camino propio se construye, no se hereda.",
+      ],
+      image: "/images/historia-inicio-placeholder.jpg",
+    },
+    pandemia: {
+      eyebrow: "El quiebre",
+      title: "La pandemia y el descubrimiento del desarrollo personal",
+      paragraphs: [
+        "En 2020, con el mundo detenido, Santiago encontró algo que lo puso en movimiento. Con más tiempo libre que nunca, empezó a leer, a escuchar podcasts y a explorar un universo que no conocía: el desarrollo personal.",
+        "Por primera vez, las ideas que consumía tenían aplicación directa en su vida. Cada libro, cada conversación, cada aprendizaje se convertía en una herramienta concreta para crecer.",
+        "Lo que empezó como curiosidad durante el aislamiento se transformó en una forma de vida.",
+      ],
+      image: "/images/historia-pandemia-placeholder.jpg",
+    },
+    fenix: {
+      eyebrow: "El punto de inflexión",
+      title: "El Seminario Fénix de Brian Tracy",
+      quote:
+        "Ese seminario cambió todo. Por primera vez entendí que mis creencias eran el único límite real. Que el trabajo interior no era un lujo, era la base de cualquier logro exterior.",
+      paragraph:
+        "Participar del Seminario Fénix de Brian Tracy fue el momento que dividió su vida en un antes y un después. Tres días de inmersión total en mentalidad, propósito y acción que le dieron un marco claro para entender quién era y hacia dónde quería ir.",
+    },
+    aprendizajes: {
+      eyebrow: "La transformación",
+      title: "Qué aprendí",
+      paragraphs: [
+        "A partir de ese momento, Santiago empezó a trabajar en sus creencias, sus hábitos, su forma de comunicarse y su propósito. No como un proceso lineal, sino como un trabajo constante, con avances y retrocesos.",
+        "Aprendió que el crecimiento personal no es un destino: es una práctica. Que la disciplina es más poderosa que la motivación. Que las conversaciones correctas cambian el rumbo de una vida.",
+        "Y que el conocimiento vale mucho más cuando se comparte.",
+      ],
+      image: "/images/historia-aprendizajes-placeholder.jpg",
+    },
+    mision: {
+      eyebrow: "El futuro",
+      title: "Qué quiero construir",
+      paragraphs: [
+        "Santiago dedica gran parte de su tiempo a estudiar, aplicar y compartir lo que aprende. A través del podcast, las redes, la comunidad y el libro que está escribiendo, busca que cada persona que lo escuche se lleve algo concreto.",
+        "Su misión es simple y ambiciosa al mismo tiempo: ayudar a las personas a entender cómo funciona su mente, qué mueve su comportamiento y cuál es su propósito, para que puedan construir una vida más consciente y más propia.",
+      ],
+    },
+  },
+
+  // Fotos de la galería (placeholders)
+  gallery: [
+    { label: "Grabando el podcast", image: "/images/gallery-podcast.jpg" },
+    { label: "Hablando en público", image: "/images/gallery-publico.jpg" },
+    { label: "Foto profesional", image: "/images/gallery-profesional-1.jpg" },
+    { label: "Sesión de trabajo", image: "/images/gallery-trabajo.jpg" },
+    { label: "Foto profesional", image: "/images/gallery-profesional-2.jpg" },
+    { label: "Con la comunidad", image: "/images/gallery-comunidad.jpg" },
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Podcast — Vive para Contarlo
+// ---------------------------------------------------------------------------
+
+export const podcast = {
+  name: "Vive para Contarlo",
+  meaning:
+    "Vivir para contarlo significa vivir experiencias que transforman. Cuanto más vive una persona, más aprende. Cuanto más aprende, más tiene para compartir. La vida se construye a través de historias, relaciones, desafíos y aprendizajes.",
+  description:
+    "Relatos e historias que inspiran, enseñan y transforman. Conversaciones con personas que superaron desafíos, lograron resultados extraordinarios o desarrollaron aprendizajes valiosos que merecen ser compartidos.",
+  objectives: [
+    "Enseñar a través del entretenimiento.",
+    "Generar conversaciones profundas, educativas y prácticas.",
+    "Que cada episodio deje una enseñanza aplicable.",
+  ],
+  guestTypes: [
+    "Empresarios",
+    "Emprendedores",
+    "Psicólogos",
+    "Deportistas",
+    "Autores",
+    "Comunicadores",
+    "Personas con historias extraordinarias",
+  ],
+  episodes: [
+    {
+      number: "001",
+      title: "Cómo superar la adversidad y volver más fuerte",
+      guest: "Invitado por confirmar",
+      duration: "58 min",
+      category: "Mentalidad",
+    },
+    {
+      number: "002",
+      title: "Construir hábitos que realmente duran",
+      guest: "Invitado por confirmar",
+      duration: "1 h 12 min",
+      category: "Hábitos",
+    },
+    {
+      number: "003",
+      title: "El poder de comunicar con propósito",
+      guest: "Invitado por confirmar",
+      duration: "47 min",
+      category: "Comunicación",
+    },
+    {
+      number: "004",
+      title: "De cero a emprendedor: el camino real",
+      guest: "Invitado por confirmar",
+      duration: "1 h 5 min",
+      category: "Emprendimiento",
+    },
+    {
+      number: "005",
+      title: "Encontrá tu propósito antes de los 30",
+      guest: "Invitado por confirmar",
+      duration: "52 min",
+      category: "Propósito",
+    },
+    {
+      number: "006",
+      title: "Alto rendimiento sin quemarte en el intento",
+      guest: "Invitado por confirmar",
+      duration: "1 h 18 min",
+      category: "Productividad",
+    },
+  ],
+  marqueeText: "VIVE PARA CONTARLO · HISTORIAS QUE TRANSFORMAN · APRENDIZAJES REALES · CONVERSACIONES QUE INSPIRAN · ",
+  spotify: "#",
+  youtube: "#",
+  instagramProfile:
+    "https://www.instagram.com/viveparacontarlo_",
+  // Permalinks de posts/reels para los embeds reales de Instagram.
+  // Formato: "https://www.instagram.com/p/XXXX/" o "https://www.instagram.com/reel/XXXX/"
+  // Mientras esté vacío, los previews muestran las cards placeholder.
+  instagramPosts: [
+    "https://www.instagram.com/reel/DVbgxt8kfwZ/",
+    "https://www.instagram.com/reel/DPM13wgkWjw/",
+    "https://www.instagram.com/reel/DZ0QZdPRMvX/",
+    "https://www.instagram.com/reel/DZ0PxiXxEVk/",
+    "https://www.instagram.com/reel/DZWNp1zxSCc/",
+    "https://www.instagram.com/reel/DZLGScbRZkZ/",
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Libro (en desarrollo)
+// ---------------------------------------------------------------------------
+
+export const book = {
+  status: "En desarrollo",
+  includes: [
+    "Libro digital",
+    "Audiolibro",
+    "Guía práctica",
+    "Ejercicios",
+    "Clases grabadas por capítulo",
+  ],
+  philosophy:
+    "El libro no se regala porque las personas valoran más aquello por lo que realizan una inversión. El objetivo es aumentar el compromiso y la implementación de los aprendizajes.",
+};
+
+// ---------------------------------------------------------------------------
+// Comunidad (WhatsApp)
+// ---------------------------------------------------------------------------
+
+export const community = {
+  channel: "WhatsApp",
+  content: [
+    "Reflexiones",
+    "Resúmenes de libros",
+    "Recomendaciones",
+    "Noticias",
+    "Videos",
+    "Desafíos",
+    "Aprendizajes personales",
+  ],
+};
+
+// ---------------------------------------------------------------------------
+// Recursos
+// ---------------------------------------------------------------------------
+
+export const resources = {
+  categories: [
+    "Libros",
+    "Podcasts",
+    "Comunicación",
+    "Marketing",
+    "Desarrollo Personal",
+    "Productividad",
+    "Psicología",
+    "Historias Inspiradoras",
+  ],
+};
