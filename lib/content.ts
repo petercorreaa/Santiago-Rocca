@@ -39,7 +39,7 @@ export const social = {
 export const about = {
   bio: "Santiago Rocca es emprendedor, autor, divulgador del desarrollo personal y estudiante permanente del comportamiento humano. Dedica gran parte de su tiempo a estudiar desarrollo personal, comunicación, marketing, comportamiento humano y todas aquellas disciplinas que ayudan a las personas a crecer y alcanzar una mejor versión de sí mismas.",
   mission:
-    "Ayudar a las personas a mejorar su vida mediante el desarrollo personal, entendiendo cómo funciona su mente, su comportamiento y su propósito para construir una vida más consciente.",
+    "Le muestro a las personas a mejorar su vida mediante el desarrollo personal, entendiendo cómo funciona su mente, su comportamiento y su propósito para construir una vida más consciente.",
 };
 
 // ---------------------------------------------------------------------------
