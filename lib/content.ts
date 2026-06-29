@@ -173,9 +173,10 @@ export const story = {
       eyebrow: "El quiebre",
       title: "La pandemia y el descubrimiento del desarrollo personal",
       paragraphs: [
-        "En 2020, con el mundo detenido, Santiago encontró algo que lo puso en movimiento. Con más tiempo libre que nunca, empezó a leer, a escuchar podcasts y a explorar un universo que no conocía: el desarrollo personal.",
-        "Por primera vez, las ideas que consumía tenían aplicación directa en su vida. Cada libro, cada conversación, cada aprendizaje se convertía en una herramienta concreta para crecer.",
-        "Lo que empezó como curiosidad durante el aislamiento se transformó en una forma de vida.",
+        "En 2020, mientras el mundo parecía detenerse, encontré algo que me puso en movimiento. De repente tenía más tiempo libre que nunca, y empecé a dedicarlo a leer libros, escuchar podcasts, ver entrevistas y profundizar en un mundo que hasta ese momento conocía muy poco: el desarrollo personal.",
+        "Recuerdo sentir que estaba descubriendo respuestas a muchas de las preguntas que me habían acompañado durante años. Por primera vez, todo lo que aprendía tenía una aplicación directa en mi vida. Cada libro me dejaba una idea nueva, cada podcast me abría una perspectiva diferente y cada aprendizaje se convertía en una herramienta concreta para crecer, mejorar y entenderme mejor.",
+        "Y lo que más me impactó era encontrar patrones en las historias de las personas que admiraba. Veía que muchos de mis ídolos, independientemente del deporte, la profesión o la industria en la que se desempeñaban, compartían valores, hábitos y formas de pensar muy similares. Habían atravesado dificultades, fracasos, rechazos y momentos de incertidumbre, pero habían aprendido a utilizarlos como combustible para seguir avanzando.",
+        "Lo que comenzó como una simple curiosidad durante el aislamiento terminó transformándose en una forma de vida. Ya no se trataba solamente de aprender, sino de poner en práctica esos conocimientos, cuestionar mis creencias, desarrollar nuevos hábitos y convertirme, poco a poco, en una mejor versión de mí mismo.",
       ],
       image: "/images/historia-pandemia-placeholder.jpg",
     },
