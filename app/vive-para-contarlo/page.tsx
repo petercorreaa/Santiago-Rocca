@@ -37,7 +37,14 @@ export default function ViveParaContarloPage() {
           <div aria-hidden className="pointer-events-none absolute -left-40 top-0 h-[40rem] w-[40rem] rounded-full bg-brand/10 blur-3xl" />
           <div aria-hidden className="absolute left-0 top-0 h-full w-1 bg-brand" />
 
-          <div className="mx-auto w-full max-w-content px-6 py-24 md:px-14">
+          {/* Logo del podcast de fondo, lado derecho */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute right-0 top-1/2 hidden h-[clamp(28rem,55vw,46rem)] w-[clamp(28rem,55vw,46rem)] -translate-y-1/2 translate-x-1/4 bg-contain bg-center bg-no-repeat opacity-[0.18] md:block"
+            style={{ backgroundImage: "url('/Podcast/Logo Podcast1.png')" }}
+          />
+
+          <div className="relative mx-auto w-full max-w-content px-6 py-24 md:px-14">
             <Reveal className="max-w-4xl">
               <h1 className="font-display text-[clamp(3.5rem,9vw,7.5rem)] font-extrabold uppercase leading-[0.9] tracking-hero">
                 {podcast.name}
