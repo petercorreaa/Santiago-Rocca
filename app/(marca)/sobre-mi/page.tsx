@@ -80,38 +80,7 @@ export default function SobreMiPage() {
       />
 
       {/* ─────────────────────────────────────────────
-          4 · El Seminario Fénix — máxima jerarquía visual
-      ───────────────────────────────────────────── */}
-      <section className="w-full bg-brand text-white">
-        <div className="mx-auto w-full max-w-content px-6 py-24 md:px-14 md:py-32">
-          <Reveal className="mx-auto max-w-4xl">
-            <p className="label flex items-center gap-3 text-white/70">
-              <span className="inline-block h-px w-8 bg-white/40" />
-              {chapters.fenix.eyebrow}
-            </p>
-
-            {/* La cita como gran titular */}
-            <blockquote className="mt-8 font-display text-[clamp(1.75rem,4vw,3rem)] font-extrabold uppercase leading-[1.1] tracking-tight">
-              &ldquo;{chapters.fenix.quote}&rdquo;
-            </blockquote>
-
-            {/* Línea divisoria */}
-            <div className="my-10 h-px bg-white/20" />
-
-            <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
-              <h2 className="font-display text-[clamp(2rem,4vw,3rem)] font-extrabold uppercase leading-tight tracking-tight">
-                {chapters.fenix.title}
-              </h2>
-              <p className="text-base leading-relaxed text-white/75 md:text-lg">
-                {chapters.fenix.paragraph}
-              </p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ─────────────────────────────────────────────
-          5 · Qué aprendí — texto izq, imagen der (light)
+          4 · Qué aprendí — texto izq, imagen der (light)
       ───────────────────────────────────────────── */}
       <StoryBlock
         eyebrow={chapters.aprendizajes.eyebrow}
@@ -123,7 +92,7 @@ export default function SobreMiPage() {
       />
 
       {/* ─────────────────────────────────────────────
-          6 · Qué quiero construir — centrado (dark)
+          5 · Qué quiero construir — centrado (dark)
       ───────────────────────────────────────────── */}
       <SectionWrapper variant="dark">
         <div className="mx-auto max-w-3xl">
@@ -157,7 +126,7 @@ export default function SobreMiPage() {
       </SectionWrapper>
 
       {/* ─────────────────────────────────────────────
-          7 · Galería de fotos
+          6 · Galería de fotos
       ───────────────────────────────────────────── */}
       <SectionWrapper variant="light">
         <Reveal className="mb-12">
@@ -191,7 +160,7 @@ export default function SobreMiPage() {
       </SectionWrapper>
 
       {/* ─────────────────────────────────────────────
-          8 · CTA final — redes + comunidad
+          7 · CTA final — redes + comunidad
       ───────────────────────────────────────────── */}
       <SectionWrapper variant="dark">
         <Reveal className="mx-auto max-w-3xl text-center">

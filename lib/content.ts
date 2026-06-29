@@ -180,14 +180,6 @@ export const story = {
       ],
       image: "/images/historia-pandemia-placeholder.jpg",
     },
-    fenix: {
-      eyebrow: "El punto de inflexión",
-      title: "El Seminario Fénix de Brian Tracy",
-      quote:
-        "Ese seminario cambió todo. Por primera vez entendí que mis creencias eran el único límite real. Que el trabajo interior no era un lujo, era la base de cualquier logro exterior.",
-      paragraph:
-        "Participar del Seminario Fénix de Brian Tracy fue el momento que dividió su vida en un antes y un después. Tres días de inmersión total en mentalidad, propósito y acción que le dieron un marco claro para entender quién era y hacia dónde quería ir.",
-    },
     aprendizajes: {
       eyebrow: "La transformación",
       title: "Qué aprendí",
