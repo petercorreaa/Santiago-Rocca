@@ -195,8 +195,10 @@ export const story = {
       eyebrow: "El futuro",
       title: "Qué quiero construir",
       paragraphs: [
-        "Santiago dedica gran parte de su tiempo a estudiar, aplicar y compartir lo que aprende. A través del podcast, las redes, la comunidad y el libro que está escribiendo, busca que cada persona que lo escuche se lleve algo concreto.",
-        "Su misión es simple y ambiciosa al mismo tiempo: ayudar a las personas a entender cómo funciona su mente, qué mueve su comportamiento y cuál es su propósito, para que puedan construir una vida más consciente y más propia.",
+        "Hoy dedico gran parte de mi tiempo a estudiar, aprender, poner en práctica y compartir todo aquello que considero valioso. A través de mi podcast, mis redes sociales, los proyectos que desarrollo y los libros, busco que cada persona que me escuche pueda llevarse una idea, una herramienta o una reflexión que le sirva para mejorar algún aspecto de su vida.",
+        "Mi objetivo no es decirle a nadie cómo vivir, sino acercar conocimientos, experiencias y conversaciones que ayuden a las personas a conocerse mejor, cuestionarse más y tomar decisiones más conscientes.",
+        "Si tuviera que resumir mi misión en una sola frase, diría que quiero ayudar a las personas a mejorar su vida a través del desarrollo personal, entendiendo cómo funciona su mente, qué impulsa su comportamiento y cuál es su propósito, para que puedan construir una vida más consciente, más auténtica y más alineada con quienes realmente son.",
+        "Creo profundamente que cuando una persona se entiende a sí misma, descubre herramientas para crecer y se anima a actuar, puede transformar por completo el rumbo de su vida.",
       ],
     },
   },
