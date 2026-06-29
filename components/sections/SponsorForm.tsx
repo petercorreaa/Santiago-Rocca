@@ -107,20 +107,7 @@ export function SponsorForm() {
               />
             </div>
 
-            <div className="flex flex-col">
-              <label htmlFor="s-presupuesto" className={labelBase}>
-                Presupuesto aproximado
-              </label>
-              <input
-                id="s-presupuesto"
-                name="presupuesto"
-                type="text"
-                placeholder="Ej: USD 500 / mes"
-                className={inputBase}
-              />
-            </div>
-
-            <div className="flex items-end">
+            <div className="flex items-end md:col-span-2">
               <button type="submit" className="btn-secondary-light">
                 Enviar consulta
               </button>
