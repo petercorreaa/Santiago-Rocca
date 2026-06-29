@@ -113,15 +113,6 @@ export default function SobreMiPage() {
               </Reveal>
             ))}
           </div>
-
-          {/* Misión como frase destacada */}
-          <Reveal delay={0.2}>
-            <div className="mt-12 border-l-4 border-accent pl-7">
-              <p className="font-display text-xl font-bold uppercase leading-snug tracking-tight text-white md:text-2xl">
-                {about.mission}
-              </p>
-            </div>
-          </Reveal>
         </div>
       </SectionWrapper>
 
