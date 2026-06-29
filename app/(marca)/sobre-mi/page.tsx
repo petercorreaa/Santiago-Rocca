@@ -78,6 +78,7 @@ export default function SobreMiPage() {
         image={chapters.pandemia.image}
         imagePosition="left"
         variant="dark"
+        realPhoto
       />
 
       {/* ─────────────────────────────────────────────
@@ -90,6 +91,7 @@ export default function SobreMiPage() {
         image={chapters.aprendizajes.image}
         imagePosition="right"
         variant="light"
+        realPhoto
       />
 
       {/* ─────────────────────────────────────────────

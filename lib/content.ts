@@ -178,7 +178,7 @@ export const story = {
         "Y lo que más me impactó era encontrar patrones en las historias de las personas que admiraba. Veía que muchos de mis ídolos, independientemente del deporte, la profesión o la industria en la que se desempeñaban, compartían valores, hábitos y formas de pensar muy similares. Habían atravesado dificultades, fracasos, rechazos y momentos de incertidumbre, pero habían aprendido a utilizarlos como combustible para seguir avanzando.",
         "Lo que comenzó como una simple curiosidad durante el aislamiento terminó transformándose en una forma de vida. Ya no se trataba solamente de aprender, sino de poner en práctica esos conocimientos, cuestionar mis creencias, desarrollar nuevos hábitos y convertirme, poco a poco, en una mejor versión de mí mismo.",
       ],
-      image: "/images/historia-pandemia-placeholder.jpg",
+      image: "/Mias/Mia1.jpg",
     },
     aprendizajes: {
       eyebrow: "La transformación",
@@ -189,7 +189,7 @@ export const story = {
         "También aprendí a conocerme. A entender cuáles son mis valores, mis principios, qué cosas me motivan y qué cosas no estoy dispuesto a negociar. Descubrí que muchas veces las respuestas que buscamos afuera están dentro de nosotros, pero necesitamos las herramientas correctas para encontrarlas.",
         "Y después de años aprendiendo, leyendo, escuchando y poniendo en práctica todo ese conocimiento, me di cuenta de algo que cambió por completo mi rumbo: una de las cosas que más disfruto es compartirlo. Me apasiona transmitir ideas, generar conversaciones y acercar herramientas que puedan ayudar a otras personas, tal como me ayudaron a mí. Porque si algo comprobé en este camino es que una sola idea puede cambiar una perspectiva, una decisión puede cambiar un destino y una conversación puede cambiar una vida.",
       ],
-      image: "/images/historia-aprendizajes-placeholder.jpg",
+      image: "/Mias/Mia2.jpg",
     },
     mision: {
       eyebrow: "El futuro",
