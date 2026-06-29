@@ -184,9 +184,10 @@ export const story = {
       eyebrow: "La transformación",
       title: "Qué aprendí",
       paragraphs: [
-        "A partir de ese momento, Santiago empezó a trabajar en sus creencias, sus hábitos, su forma de comunicarse y su propósito. No como un proceso lineal, sino como un trabajo constante, con avances y retrocesos.",
-        "Aprendió que el crecimiento personal no es un destino: es una práctica. Que la disciplina es más poderosa que la motivación. Que las conversaciones correctas cambian el rumbo de una vida.",
-        "Y que el conocimiento vale mucho más cuando se comparte.",
+        "Con el paso del tiempo empecé a trabajar en mis creencias, mis hábitos, mi forma de comunicarme y la manera en la que veía la vida. No fue un proceso perfecto ni lineal. Hubo momentos de mucho crecimiento y otros de retrocesos, dudas y aprendizajes. Pero cada paso me fue ayudando a entenderme mejor.",
+        "Aprendí muchísimas cosas que terminaron impactando en todas las áreas de mi vida. Me ayudaron en mi trabajo, en mis estudios, en la facultad, en mis relaciones y en la forma en la que tomo decisiones. Aprendí a comunicarme mejor, a expresarme con más claridad, a escribir mejor, a vender mejor mis ideas, a relacionarme con las personas de una manera más profunda y a entender qué era lo que realmente quería para mi vida.",
+        "También aprendí a conocerme. A entender cuáles son mis valores, mis principios, qué cosas me motivan y qué cosas no estoy dispuesto a negociar. Descubrí que muchas veces las respuestas que buscamos afuera están dentro de nosotros, pero necesitamos las herramientas correctas para encontrarlas.",
+        "Y después de años aprendiendo, leyendo, escuchando y poniendo en práctica todo ese conocimiento, me di cuenta de algo que cambió por completo mi rumbo: una de las cosas que más disfruto es compartirlo. Me apasiona transmitir ideas, generar conversaciones y acercar herramientas que puedan ayudar a otras personas, tal como me ayudaron a mí. Porque si algo comprobé en este camino es que una sola idea puede cambiar una perspectiva, una decisión puede cambiar un destino y una conversación puede cambiar una vida.",
       ],
       image: "/images/historia-aprendizajes-placeholder.jpg",
     },
