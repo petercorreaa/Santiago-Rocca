@@ -40,7 +40,7 @@ export default function ViveParaContarloPage() {
           {/* Logo del podcast de fondo, lado derecho */}
           <div
             aria-hidden
-            className="pointer-events-none absolute right-0 top-1/2 hidden h-[clamp(28rem,55vw,46rem)] w-[clamp(28rem,55vw,46rem)] -translate-y-1/2 translate-x-1/4 bg-contain bg-center bg-no-repeat opacity-[0.18] md:block"
+            className="pointer-events-none absolute right-0 top-1/2 hidden h-[clamp(38rem,70vw,60rem)] w-[clamp(38rem,70vw,60rem)] -translate-y-1/2 translate-x-[8%] bg-contain bg-center bg-no-repeat opacity-[0.18] md:block"
             style={{ backgroundImage: "url('/Podcast/Logo Podcast1.png')" }}
           />
 
