@@ -44,7 +44,7 @@ export default function ViveParaContarloPage() {
             style={{ backgroundImage: "url('/Podcast/Logo Podcast1.png')" }}
           />
 
-          <div className="relative mx-auto w-full max-w-content px-6 py-24 md:px-14">
+          <div className="relative mx-auto w-full max-w-content px-6 py-24 md:px-8">
             <Reveal className="max-w-4xl">
               <h1 className="font-display text-[clamp(3.5rem,9vw,7.5rem)] font-extrabold uppercase leading-[0.9] tracking-hero">
                 {podcast.name}

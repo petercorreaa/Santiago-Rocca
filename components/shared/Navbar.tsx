@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-ink-border bg-ink/40 backdrop-blur-md">
-      <nav className="mx-auto flex h-20 w-full max-w-content items-center justify-between px-6 md:px-10">
+      <nav className="mx-auto flex h-20 w-full max-w-content items-center justify-between px-6 md:px-8">
         {/* Logo — tipográfico bordo */}
         <Link
           href="/"

@@ -12,7 +12,7 @@ interface CommunityCTAProps {
 export function CommunityCTA({ title, text, cta }: CommunityCTAProps) {
   return (
     <section className="w-full bg-accent text-ink">
-      <div className="mx-auto w-full max-w-content px-6 py-24 md:px-10 md:py-32">
+      <div className="mx-auto w-full max-w-content px-6 py-24 md:px-8 md:py-32">
         <Reveal className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <h2 className="font-display text-[clamp(2.5rem,5.5vw,4.5rem)] font-extrabold uppercase leading-none tracking-tight">
             {title}

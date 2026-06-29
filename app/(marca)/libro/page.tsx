@@ -26,7 +26,7 @@ export default function LibroPage() {
         <div aria-hidden className="pointer-events-none absolute right-0 bottom-0 h-[30rem] w-[30rem] rounded-full bg-accent/6 blur-3xl" />
         <div aria-hidden className="absolute left-0 top-0 h-full w-1 bg-brand" />
 
-        <div className="relative z-10 mx-auto w-full max-w-content px-6 py-28 md:px-14">
+        <div className="relative z-10 mx-auto w-full max-w-content px-6 py-28 md:px-8">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
 
             {/* Mockup libro */}
@@ -141,7 +141,7 @@ export default function LibroPage() {
 
       {/* ─── 5 · CTA FINAL ─── */}
       <section className="w-full bg-accent text-ink">
-        <div className="mx-auto w-full max-w-content px-6 py-24 md:px-14 md:py-28">
+        <div className="mx-auto w-full max-w-content px-6 py-24 md:px-8 md:py-28">
           <Reveal className="mx-auto max-w-3xl text-center">
             <h2 className="font-display text-[clamp(2.5rem,5.5vw,4.5rem)] font-extrabold uppercase leading-none tracking-tight">
               Mientras tanto, seguí creciendo

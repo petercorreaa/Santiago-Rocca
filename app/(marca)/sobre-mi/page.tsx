@@ -38,7 +38,7 @@ export default function SobreMiPage() {
         {/* Línea bordo lateral */}
         <div aria-hidden className="absolute left-0 top-0 h-full w-1 bg-brand" />
 
-        <div className="relative z-10 mx-auto w-full max-w-content px-6 pb-20 pt-40 md:px-14">
+        <div className="relative z-10 mx-auto w-full max-w-content px-6 pb-20 pt-40 md:px-8">
           <Reveal>
             <p className="label flex items-center gap-3 text-accent">
               <span className="inline-block h-px w-8 bg-accent" />

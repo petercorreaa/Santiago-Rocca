@@ -6,7 +6,7 @@ const socials = [social.instagram, social.youtube, social.spotify];
 export function Footer() {
   return (
     <footer className="w-full border-t border-ink-border bg-ink text-white">
-      <div className="mx-auto flex w-full max-w-content flex-col gap-12 px-6 py-16 md:px-10">
+      <div className="mx-auto flex w-full max-w-content flex-col gap-12 px-6 py-16 md:px-8">
         <div className="flex flex-col justify-between gap-12 md:flex-row">
           {/* Marca */}
           <div className="max-w-xs">

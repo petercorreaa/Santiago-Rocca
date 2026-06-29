@@ -37,7 +37,7 @@ export function SectionWrapper({
       className={`w-full ${variantClasses} ${flush ? "" : "py-24 md:py-32"} ${className}`}
     >
       {contained ? (
-        <div className="mx-auto w-full max-w-content px-6 md:px-10">{children}</div>
+        <div className="mx-auto w-full max-w-content px-6 md:px-8">{children}</div>
       ) : (
         children
       )}

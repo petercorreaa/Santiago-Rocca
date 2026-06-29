@@ -43,7 +43,7 @@ export function WhoIsHero({
       <div aria-hidden className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: background }} />
       <div aria-hidden className="absolute left-0 top-0 z-10 h-full w-1 bg-brand" />
 
-      <div className="relative z-10 mx-auto w-full max-w-content px-6 pb-24 pt-40 md:px-14">
+      <div className="relative z-10 mx-auto w-full max-w-content px-6 pb-24 pt-40 md:px-8">
         <div className="max-w-3xl">
 
           {/* eyebrow */}

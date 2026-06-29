@@ -53,7 +53,7 @@ export function HeroSection({
       {/* Línea bordo vertical izquierda */}
       <div aria-hidden className="absolute left-0 top-0 z-10 h-full w-1 bg-brand" />
 
-      <div className="relative z-10 mx-auto w-full max-w-content px-6 py-28 md:px-14">
+      <div className="relative z-10 mx-auto w-full max-w-content px-6 py-28 md:px-8">
         <div className="max-w-4xl">
           <motion.div
             custom={0}

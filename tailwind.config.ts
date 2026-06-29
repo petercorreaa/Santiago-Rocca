@@ -39,7 +39,7 @@ const config: Config = {
         hero: "-0.04em",
       },
       maxWidth: {
-        content: "1280px",
+        content: "1600px",
       },
       keyframes: {
         marquee: {
