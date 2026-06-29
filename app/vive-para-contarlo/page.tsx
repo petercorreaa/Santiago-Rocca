@@ -48,9 +48,18 @@ export default function ViveParaContarloPage() {
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Button href={podcast.spotify}>Escuchar en Spotify</Button>
-                <Button href={podcast.youtube} variant="secondary" surface="dark">
+                {/* Botón con color y estilo de marca YouTube (rojo #FF0000) */}
+                <a
+                  href={podcast.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2.5 rounded-sm bg-[#FF0000] px-8 py-4 text-sm font-bold uppercase tracking-label text-white transition-all duration-200 hover:-translate-y-px hover:bg-[#CC0000]"
+                >
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                    <path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z" />
+                  </svg>
                   Ver en YouTube
-                </Button>
+                </a>
               </div>
             </Reveal>
           </div>
