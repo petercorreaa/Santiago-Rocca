@@ -80,7 +80,6 @@ export function StoryBlock({
         <div
           className={`absolute inset-0 border ${isLight ? "border-ink/8" : "border-white/5"}`}
         />
-        <span className="absolute bottom-5 left-5 label text-white/50">{eyebrow}</span>
       </div>
     </Reveal>
   );
