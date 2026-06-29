@@ -275,6 +275,12 @@ export const podcast = {
   marqueeText: "VIVE PARA CONTARLO · HISTORIAS QUE TRANSFORMAN · APRENDIZAJES REALES · CONVERSACIONES QUE INSPIRAN · ",
   spotify: "#",
   youtube: "#",
+  // Videos destacados de YouTube (portadas). Los links se completan luego.
+  featuredVideos: [
+    { image: "/Podcast/portada-1.jpg", url: "#" },
+    { image: "/Podcast/portada-2.jpg", url: "#" },
+    { image: "/Podcast/portada-3.jpg", url: "#" },
+  ],
   instagramProfile:
     "https://www.instagram.com/viveparacontarlo_",
   // Permalinks de posts/reels para los embeds reales de Instagram.

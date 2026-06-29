@@ -71,6 +71,34 @@ export default function ViveParaContarloPage() {
             </Reveal>
           </div>
         </div>
+
+        {/* Videos destacados de YouTube (portadas) */}
+        <div className="mx-auto w-full max-w-content px-6 pb-24 md:px-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {podcast.featuredVideos.map((video, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+                <a
+                  href={video.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative block aspect-video overflow-hidden rounded-sm border border-ink-border transition-colors duration-300 hover:border-[#FF0000]"
+                >
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                    style={{ backgroundImage: `url('${video.image}')` }}
+                  />
+                  {/* Velo + botón play de YouTube */}
+                  <div className="absolute inset-0 bg-ink/10 transition-colors duration-300 group-hover:bg-ink/0" />
+                  <span className="absolute left-1/2 top-1/2 flex h-14 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-xl bg-[#FF0000] text-white opacity-90 transition-all duration-300 group-hover:scale-110 group-hover:opacity-100">
+                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </span>
+                </a>
+              </Reveal>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ─────────────────────────────────────────────
