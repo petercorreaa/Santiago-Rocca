@@ -65,6 +65,7 @@ export default function SobreMiPage() {
         image={chapters.comoEmpezó.image}
         imagePosition="right"
         variant="light"
+        realPhoto
       />
 
       {/* ─────────────────────────────────────────────

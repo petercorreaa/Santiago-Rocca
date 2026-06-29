@@ -167,7 +167,7 @@ export const story = {
         "Sin saberlo, esa búsqueda me acercó al desarrollo personal, la psicología y también a la sociología, porque entender a las personas y comprender por qué somos como somos se convirtió en una de mis mayores pasiones.",
         "Desde el principio creí profundamente que cualquier persona puede alcanzar mucho más de lo que imagina. Sé que puede sonar idealista o demasiado optimista, pero la experiencia me demostró una y otra vez que las personas somos capaces de transformar nuestra realidad cuando encontramos una razón fuerte para hacerlo y estamos dispuestos a crecer. Hay una frase que me acompaña desde hace años y que resume gran parte de mi forma de pensar: \"Apunta a la luna; porque aunque no llegues, terminarás entre las estrellas\". Para mí, el verdadero fracaso no es quedarse corto de una meta ambiciosa, sino nunca animarse a perseguirla.",
       ],
-      image: "/images/historia-inicio-placeholder.jpg",
+      image: "/Mias/SR-persona.png",
     },
     pandemia: {
       eyebrow: "El quiebre",

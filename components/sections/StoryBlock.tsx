@@ -9,6 +9,11 @@ interface StoryBlockProps {
   /** Posición de la imagen en desktop. */
   imagePosition?: "left" | "right";
   variant?: SectionVariant;
+  /**
+   * Foto real (no placeholder): usa un overlay sutil para que la persona se
+   * vea nítida, en vez del degradé oscuro de marca de los placeholders.
+   */
+  realPhoto?: boolean;
 }
 
 /**
@@ -23,8 +28,15 @@ export function StoryBlock({
   image,
   imagePosition = "right",
   variant = "light",
+  realPhoto = false,
 }: StoryBlockProps) {
   const isLight = variant === "light";
+
+  // Overlay sutil para fotos reales (solo asegura legibilidad del label);
+  // degradé de marca más oscuro para los placeholders.
+  const overlay = realPhoto
+    ? "linear-gradient(to top, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0) 35%)"
+    : "linear-gradient(135deg, rgba(122,28,46,0.3), rgba(10,10,10,0.75))";
 
   const textCol = (
     <Reveal className="flex flex-col justify-center">
@@ -62,7 +74,7 @@ export function StoryBlock({
       <div
         className="relative aspect-[4/5] w-full overflow-hidden rounded-sm bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(122,28,46,0.3), rgba(10,10,10,0.75)), url(${image})`,
+          backgroundImage: `${overlay}, url(${image})`,
         }}
       >
         <div
