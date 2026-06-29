@@ -27,7 +27,7 @@ export const navLinks: NavLink[] = [
 ];
 
 export const social = {
-  instagram: { label: "Instagram", href: "#" },
+  instagram: { label: "Instagram", href: "https://www.instagram.com/santiagorocca" },
   youtube: { label: "YouTube", href: "#" },
   spotify: { label: "Spotify", href: "#" },
 };
@@ -167,7 +167,7 @@ export const story = {
         "Sin saberlo, esa búsqueda me acercó al desarrollo personal, la psicología y también a la sociología, porque entender a las personas y comprender por qué somos como somos se convirtió en una de mis mayores pasiones.",
         "Desde el principio creí profundamente que cualquier persona puede alcanzar mucho más de lo que imagina. Sé que puede sonar idealista o demasiado optimista, pero la experiencia me demostró una y otra vez que las personas somos capaces de transformar nuestra realidad cuando encontramos una razón fuerte para hacerlo y estamos dispuestos a crecer. Hay una frase que me acompaña desde hace años y que resume gran parte de mi forma de pensar: \"Apunta a la luna; porque aunque no llegues, terminarás entre las estrellas\". Para mí, el verdadero fracaso no es quedarse corto de una meta ambiciosa, sino nunca animarse a perseguirla.",
       ],
-      image: "/Mias/SR-persona.png",
+      image: "/Mias/SR-persona.webp",
     },
     pandemia: {
       eyebrow: "El quiebre",
@@ -178,7 +178,7 @@ export const story = {
         "Y lo que más me impactó era encontrar patrones en las historias de las personas que admiraba. Veía que muchos de mis ídolos, independientemente del deporte, la profesión o la industria en la que se desempeñaban, compartían valores, hábitos y formas de pensar muy similares. Habían atravesado dificultades, fracasos, rechazos y momentos de incertidumbre, pero habían aprendido a utilizarlos como combustible para seguir avanzando.",
         "Lo que comenzó como una simple curiosidad durante el aislamiento terminó transformándose en una forma de vida. Ya no se trataba solamente de aprender, sino de poner en práctica esos conocimientos, cuestionar mis creencias, desarrollar nuevos hábitos y convertirme, poco a poco, en una mejor versión de mí mismo.",
       ],
-      image: "/Mias/Mia1.jpg",
+      image: "/Mias/Mia1.webp",
     },
     aprendizajes: {
       eyebrow: "La transformación",
@@ -189,7 +189,7 @@ export const story = {
         "También aprendí a conocerme. A entender cuáles son mis valores, mis principios, qué cosas me motivan y qué cosas no estoy dispuesto a negociar. Descubrí que muchas veces las respuestas que buscamos afuera están dentro de nosotros, pero necesitamos las herramientas correctas para encontrarlas.",
         "Y después de años aprendiendo, leyendo, escuchando y poniendo en práctica todo ese conocimiento, me di cuenta de algo que cambió por completo mi rumbo: una de las cosas que más disfruto es compartirlo. Me apasiona transmitir ideas, generar conversaciones y acercar herramientas que puedan ayudar a otras personas, tal como me ayudaron a mí. Porque si algo comprobé en este camino es que una sola idea puede cambiar una perspectiva, una decisión puede cambiar un destino y una conversación puede cambiar una vida.",
       ],
-      image: "/Mias/Mia2.jpg",
+      image: "/Mias/Mia2.webp",
     },
     mision: {
       eyebrow: "El futuro",
@@ -277,9 +277,9 @@ export const podcast = {
   youtube: "https://www.youtube.com/channel/UCkYBD_iWej0aGUE2rwlF-Fw",
   // Videos destacados de YouTube (portadas). Los links se completan luego.
   featuredVideos: [
-    { image: "/Podcast/portada-1.jpg", url: "#" },
-    { image: "/Podcast/portada-2.jpg", url: "#" },
-    { image: "/Podcast/portada-3.jpg", url: "#" },
+    { image: "/Podcast/portada-1.webp", url: "https://youtu.be/0zaOVO_PgHw?si=0tjxdded43Kwrzxb" },
+    { image: "/Podcast/portada-2.webp", url: "https://youtu.be/PHFGJRLWyHo?si=a1ohODwoYV8iBCG9" },
+    { image: "/Podcast/portada-3.webp", url: "https://youtu.be/oocNI18DX78?si=fStYOTGuGv-2Jgtn" },
   ],
   instagramProfile:
     "https://www.instagram.com/viveparacontarlo_",

@@ -1,7 +1,6 @@
 import { Headphones, BookOpen, Lightbulb } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
-import { Button } from "@/components/shared/Button";
 import { EpisodeCard } from "@/components/sections/EpisodeCard";
 import { InstagramEmbed } from "@/components/shared/InstagramEmbed";
 import { GuestForm } from "@/components/sections/GuestForm";
@@ -41,7 +40,7 @@ export default function ViveParaContarloPage() {
           <div
             aria-hidden
             className="pointer-events-none absolute right-0 top-1/2 hidden h-[clamp(38rem,70vw,60rem)] w-[clamp(38rem,70vw,60rem)] -translate-y-1/2 translate-x-[8%] bg-contain bg-center bg-no-repeat opacity-90 md:block"
-            style={{ backgroundImage: "url('/Podcast/Logo Podcast1.png')" }}
+            style={{ backgroundImage: "url('/Podcast/logo-podcast.webp')" }}
           />
 
           <div className="relative mx-auto w-full max-w-content px-6 py-24 md:px-8">
@@ -54,7 +53,18 @@ export default function ViveParaContarloPage() {
                 {podcast.meaning}
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                <Button href={podcast.spotify}>Escuchar en Spotify</Button>
+                {/* Botón con color y estilo de marca Spotify (verde #1DB954) */}
+                <a
+                  href={podcast.spotify}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2.5 rounded-sm bg-[#1DB954] px-8 py-4 text-sm font-bold uppercase tracking-label text-ink transition-all duration-200 hover:-translate-y-px hover:bg-[#1ED760]"
+                >
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.5 17.3c-.22.36-.68.47-1.03.25-2.82-1.72-6.36-2.11-10.54-1.16-.4.09-.8-.16-.9-.56-.09-.4.16-.8.56-.9 4.57-1.04 8.49-.59 11.66 1.34.36.22.47.68.25 1.03zm1.47-3.27c-.28.45-.86.59-1.3.31-3.23-1.98-8.15-2.56-11.97-1.4-.5.15-1.04-.13-1.19-.63-.15-.5.13-1.04.63-1.19 4.37-1.32 9.79-.68 13.5 1.6.43.27.57.85.29 1.3zm.13-3.4C15.25 8.36 8.87 8.15 5.18 9.27c-.6.18-1.23-.16-1.41-.76-.18-.6.16-1.23.76-1.41 4.24-1.29 11.28-1.04 15.72 1.59.54.32.72 1.01.4 1.55-.33.54-1.03.72-1.57.4z" />
+                  </svg>
+                  Escuchar en Spotify
+                </a>
                 {/* Botón con color y estilo de marca YouTube (rojo #FF0000) */}
                 <a
                   href={podcast.youtube}

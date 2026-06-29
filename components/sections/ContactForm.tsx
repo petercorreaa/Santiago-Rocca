@@ -1,13 +1,11 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { Camera, MonitorPlay, Headphones } from "lucide-react";
+import { Camera } from "lucide-react";
 import { social } from "@/lib/content";
 
 const socialLinks = [
-  { ...social.instagram, Icon: Camera,     label: "Instagram" },
-  { ...social.youtube,   Icon: MonitorPlay, label: "YouTube"   },
-  { ...social.spotify,   Icon: Headphones,  label: "Spotify"   },
+  { ...social.instagram, Icon: Camera, label: "Instagram" },
 ];
 
 const inputBase =
