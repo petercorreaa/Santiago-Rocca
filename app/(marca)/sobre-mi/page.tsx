@@ -17,7 +17,7 @@ const socialLinks = [
 ];
 
 export default function SobreMiPage() {
-  const { chapters, gallery } = story;
+  const { chapters } = story;
 
   return (
     <>
@@ -117,41 +117,7 @@ export default function SobreMiPage() {
       </SectionWrapper>
 
       {/* ─────────────────────────────────────────────
-          6 · Galería de fotos
-      ───────────────────────────────────────────── */}
-      <SectionWrapper variant="light">
-        <Reveal className="mb-12">
-          <p className="label flex items-center gap-3 text-brand">
-            <span className="inline-block h-px w-8 bg-accent" />
-            Galería
-          </p>
-          <h2 className="mt-5 font-display text-[clamp(2rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight text-ink">
-            En acción
-          </h2>
-          <div className="mt-3 h-1 w-10 bg-brand" />
-        </Reveal>
-
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-          {gallery.map((item, i) => (
-            <Reveal key={i} delay={(i % 3) * 0.07}>
-              <div
-                className="group relative aspect-square overflow-hidden rounded-sm bg-cover bg-center"
-                style={{
-                  backgroundImage: `linear-gradient(135deg, rgba(122,28,46,0.${20 + i * 5}), rgba(10,10,10,0.7)), url(${item.image})`,
-                }}
-              >
-                <div className="absolute inset-0 bg-ink/0 transition-colors duration-300 group-hover:bg-ink/20" />
-                <span className="absolute bottom-3 left-3 label text-white/60 transition-colors duration-300 group-hover:text-white/90">
-                  {item.label}
-                </span>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </SectionWrapper>
-
-      {/* ─────────────────────────────────────────────
-          7 · CTA final — redes + comunidad
+          6 · CTA final — redes + comunidad
       ───────────────────────────────────────────── */}
       <SectionWrapper variant="dark">
         <Reveal className="mx-auto max-w-3xl text-center">

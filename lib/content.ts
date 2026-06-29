@@ -202,16 +202,6 @@ export const story = {
       ],
     },
   },
-
-  // Fotos de la galería (placeholders)
-  gallery: [
-    { label: "Grabando el podcast", image: "/images/gallery-podcast.jpg" },
-    { label: "Hablando en público", image: "/images/gallery-publico.jpg" },
-    { label: "Foto profesional", image: "/images/gallery-profesional-1.jpg" },
-    { label: "Sesión de trabajo", image: "/images/gallery-trabajo.jpg" },
-    { label: "Foto profesional", image: "/images/gallery-profesional-2.jpg" },
-    { label: "Con la comunidad", image: "/images/gallery-comunidad.jpg" },
-  ],
 };
 
 // ---------------------------------------------------------------------------
