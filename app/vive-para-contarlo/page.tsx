@@ -8,7 +8,29 @@ import { podcast } from "@/lib/content";
 // Íconos para los objetivos del podcast
 const objectiveIcons = [Headphones, BookOpen, Lightbulb];
 
-export default function ViveParaContarloPage() {
+// Trae los IDs de los videos más recientes de la playlist desde el feed RSS
+// (sin API key). Revalida cada hora, así los episodios nuevos aparecen solos.
+async function getLatestVideoIds(): Promise<string[]> {
+  try {
+    const res = await fetch(
+      `https://www.youtube.com/feeds/videos.xml?playlist_id=${podcast.youtubePlaylistId}`,
+      { next: { revalidate: 3600 } },
+    );
+    if (!res.ok) return podcast.latestVideosFallback;
+    const xml = await res.text();
+    const ids = Array.from(
+      xml.matchAll(/<yt:videoId>([^<]+)<\/yt:videoId>/g),
+      (m) => m[1],
+    );
+    return ids.length >= 1 ? ids.slice(0, 3) : podcast.latestVideosFallback;
+  } catch {
+    return podcast.latestVideosFallback;
+  }
+}
+
+export default async function ViveParaContarloPage() {
+  const latestVideoIds = await getLatestVideoIds();
+
   return (
     <>
       {/* ─────────────────────────────────────────────
@@ -124,18 +146,37 @@ export default function ViveParaContarloPage() {
           <div className="mt-4 h-1 w-10 bg-brand" />
         </Reveal>
 
-        {/* Playlist completa de YouTube con todos los episodios */}
-        <Reveal>
-          <div className="relative mx-auto aspect-video w-full max-w-4xl overflow-hidden rounded-sm border border-ink-border">
-            <iframe
-              className="absolute inset-0 h-full w-full"
-              src={podcast.youtubePlaylist}
-              title="Playlist completa de Vive para Contarlo en YouTube"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          </div>
+        {/* Últimos 3 videos de la playlist de YouTube */}
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {latestVideoIds.map((id, i) => (
+            <Reveal key={id} delay={i * 0.08}>
+              <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-ink-border">
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src={`https://www.youtube.com/embed/${id}`}
+                  title={`Episodio ${i + 1} de Vive para Contarlo`}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        {/* Link a la playlist completa */}
+        <Reveal className="mt-10">
+          <a
+            href={podcast.youtubePlaylistUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2.5 rounded-sm bg-[#FF0000] px-8 py-4 text-sm font-bold uppercase tracking-label text-white transition-all duration-200 hover:-translate-y-px hover:bg-[#CC0000]"
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z" />
+            </svg>
+            Ver todos los episodios
+          </a>
         </Reveal>
       </SectionWrapper>
 
