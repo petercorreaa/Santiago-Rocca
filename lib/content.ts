@@ -275,6 +275,8 @@ export const podcast = {
   marqueeText: "VIVE PARA CONTARLO · HISTORIAS QUE TRANSFORMAN · APRENDIZAJES REALES · CONVERSACIONES QUE INSPIRAN · ",
   spotify: "https://open.spotify.com/show/4Q2IgSrlVU61LQzlX6hzMv",
   youtube: "https://www.youtube.com/channel/UCkYBD_iWej0aGUE2rwlF-Fw",
+  youtubePlaylist:
+    "https://www.youtube.com/embed/videoseries?list=PLK2ymStI_H-H9nTMjYbqswKyZGzLjsHCc",
   // Videos destacados de YouTube (portadas). Los links se completan luego.
   featuredVideos: [
     { image: "/Podcast/portada-1.webp", url: "https://youtu.be/0zaOVO_PgHw?si=0tjxdded43Kwrzxb" },

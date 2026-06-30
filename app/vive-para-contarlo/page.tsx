@@ -1,8 +1,6 @@
 import { Headphones, BookOpen, Lightbulb } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
-import { EpisodeCard } from "@/components/sections/EpisodeCard";
-import { InstagramEmbed } from "@/components/shared/InstagramEmbed";
 import { GuestForm } from "@/components/sections/GuestForm";
 import { SponsorForm } from "@/components/sections/SponsorForm";
 import { podcast } from "@/lib/content";
@@ -126,19 +124,19 @@ export default function ViveParaContarloPage() {
           <div className="mt-4 h-1 w-10 bg-brand" />
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {podcast.instagramPosts.length > 0
-            ? podcast.instagramPosts.map((url, i) => (
-                <Reveal key={url} delay={i * 0.07}>
-                  <InstagramEmbed url={url} />
-                </Reveal>
-              ))
-            : podcast.episodes.map((ep, i) => (
-                <Reveal key={ep.number} delay={i * 0.07}>
-                  <EpisodeCard episode={ep} surface="dark" />
-                </Reveal>
-              ))}
-        </div>
+        {/* Playlist completa de YouTube con todos los episodios */}
+        <Reveal>
+          <div className="relative mx-auto aspect-video w-full max-w-4xl overflow-hidden rounded-sm border border-ink-border">
+            <iframe
+              className="absolute inset-0 h-full w-full"
+              src={podcast.youtubePlaylist}
+              title="Playlist completa de Vive para Contarlo en YouTube"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </Reveal>
       </SectionWrapper>
 
       {/* ─────────────────────────────────────────────
