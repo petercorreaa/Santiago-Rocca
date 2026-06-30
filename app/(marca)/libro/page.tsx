@@ -147,7 +147,7 @@ export default function LibroPage() {
               Mientras tanto, seguí creciendo
             </h2>
             <p className="mt-6 max-w-xl mx-auto text-base leading-relaxed text-ink/70 md:text-lg">
-              El podcast, la comunidad y los recursos están disponibles ahora mismo.
+              El podcast y la comunidad están disponibles ahora mismo.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <a

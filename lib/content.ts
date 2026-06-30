@@ -22,7 +22,6 @@ export const navLinks: NavLink[] = [
   { label: "Vive para Contarlo", href: "/vive-para-contarlo" },
   { label: "Libro", href: "/libro" },
   { label: "Comunidad", href: "/comunidad" },
-  { label: "Recursos", href: "/recursos" },
   { label: "Contacto", href: "/contacto" },
 ];
 
@@ -332,19 +331,3 @@ export const community = {
   ],
 };
 
-// ---------------------------------------------------------------------------
-// Recursos
-// ---------------------------------------------------------------------------
-
-export const resources = {
-  categories: [
-    "Libros",
-    "Podcasts",
-    "Comunicación",
-    "Marketing",
-    "Desarrollo Personal",
-    "Productividad",
-    "Psicología",
-    "Historias Inspiradoras",
-  ],
-};
