@@ -20,7 +20,6 @@ export const navLinks: NavLink[] = [
   { label: "Inicio", href: "/" },
   { label: "Sobre mí", href: "/sobre-mi" },
   { label: "Vive para Contarlo", href: "/vive-para-contarlo" },
-  { label: "Libro", href: "/libro" },
   { label: "Comunidad", href: "/comunidad" },
   { label: "Contacto", href: "/contacto" },
 ];
