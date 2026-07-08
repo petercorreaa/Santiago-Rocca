@@ -30,6 +30,8 @@ export const social = {
   spotify: { label: "Spotify", href: "#" },
 };
 
+export const contactEmail = "Santiagorocca2017@gmail.com";
+
 // ---------------------------------------------------------------------------
 // Quién es Santiago / Misión
 // ---------------------------------------------------------------------------
