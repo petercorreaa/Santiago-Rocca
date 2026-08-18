@@ -9,7 +9,7 @@
 // ---------------------------------------------------------------------------
 
 export const site = {
-  name: "Santiago Rocca",
+  name: "Santiago Rocca ssssssssssssssssssssssss",
   logo: "SR",
   tagline: "Desarrollo personal con propósito",
 };
