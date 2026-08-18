@@ -38,9 +38,9 @@ export const contactEmail = "Santiagorocca2017@gmail.com";
 // ---------------------------------------------------------------------------
 
 export const about = {
-  bio: "Santiago Rocca es emprendedor, autor, divulgador del desarrollo personal y estudiante permanente del comportamiento humano. Dedica gran parte de su tiempo a estudiar desarrollo personal, comunicación, marketing, comportamiento humano y todas aquellas disciplinas que ayudan a las personas a crecer y alcanzar una mejor versión de sí mismas.",
+  bio: "Hola, soy Santiago Rocca. Hace más de siete años que estudio desarrollo personal, comunicación y comportamiento humano. También estudié cuatro años Comunicación en la Universidad del Salvador.",
   mission:
-    "Le muestro a las personas a mejorar su vida mediante el desarrollo personal, entendiendo cómo funciona su mente, su comportamiento y su propósito para construir una vida más consciente.",
+    "Quiero enseñarte las herramientas del desarrollo personal que más me sirvieron a mí y que realmente me cambiaron la vida, para que puedas entenderte mejor, tomar el control de tus decisiones y construir una vida más consciente.",
 };
 
 // ---------------------------------------------------------------------------
