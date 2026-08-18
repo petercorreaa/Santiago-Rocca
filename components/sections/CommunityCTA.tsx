@@ -10,6 +10,7 @@ interface CommunityCTAProps {
 
 /** CTA final sobre fondo acento (amarillo oscuro), botón negro. */
 export function CommunityCTA({ title, text, cta }: CommunityCTAProps) {
+  const isExternal = cta.href.startsWith("http");
   return (
     <section className="w-full bg-accent text-ink">
       <div className="mx-auto w-full max-w-content px-6 py-24 md:px-8 md:py-32">
@@ -22,6 +23,8 @@ export function CommunityCTA({ title, text, cta }: CommunityCTAProps) {
           </p>
           <Link
             href={cta.href}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined}
             className="mt-10 inline-flex items-center justify-center gap-3 rounded-sm bg-ink px-8 py-4 text-sm font-bold uppercase tracking-label text-white transition-all duration-200 hover:-translate-y-px hover:bg-ink-surface"
           >
             <MessageCircle size={18} />

@@ -1,12 +1,11 @@
 import { BookOpen, Headphones, ClipboardList, PenLine, PlayCircle } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
-import { WaitlistForm } from "@/components/sections/WaitlistForm";
-import { book } from "@/lib/content";
+import { book, community } from "@/lib/content";
 
 export const metadata = {
-  title: "Libro — Santiago Rocca",
-  description: "El libro de Santiago Rocca. Próximamente.",
+  title: `${book.title} — Santiago Rocca`,
+  description: book.subtitle,
 };
 
 const features = [
@@ -29,38 +28,39 @@ export default function LibroPage() {
         <div className="relative z-10 mx-auto w-full max-w-content px-6 py-28 md:px-8">
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
 
-            {/* Mockup libro */}
+            {/* Portada */}
             <Reveal delay={0.1} className="order-2 md:order-1">
               <div className="relative mx-auto w-full max-w-xs">
                 <div className="absolute -bottom-4 left-4 right-0 h-full rounded-sm bg-ink-border blur-xl" />
-                <div className="relative rounded-sm border border-white/10 bg-gradient-to-br from-brand via-ink-surface to-ink px-10 py-16 shadow-2xl">
-                  <div className="absolute left-0 top-0 h-full w-3 rounded-l-sm bg-brand/60" />
-                  <p className="label mb-6 text-accent">Santiago Rocca</p>
-                  <p className="font-display text-3xl font-extrabold uppercase leading-tight tracking-tight text-white">
-                    [TÍTULO DEL LIBRO]
-                  </p>
-                  <div className="mt-6 h-px bg-white/15" />
-                  <p className="mt-4 text-xs leading-relaxed text-white/40">
-                    Subtítulo del libro — próximamente
-                  </p>
-                </div>
+                <div
+                  aria-hidden
+                  className="relative aspect-square w-full rounded-sm border border-white/10 bg-cover bg-center shadow-2xl"
+                  style={{ backgroundImage: `url(${book.cover})` }}
+                />
               </div>
             </Reveal>
 
             {/* Texto */}
             <Reveal className="order-1 md:order-2">
               <span className="inline-flex items-center gap-2 rounded-sm border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-bold uppercase tracking-label text-accent">
-                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-                Próximamente
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                Disponible ahora
               </span>
               <h1 className="mt-6 font-display text-[clamp(3rem,7vw,5.5rem)] font-extrabold uppercase leading-[0.9] tracking-hero">
-                El libro
+                {book.title}
               </h1>
               <div className="mt-5 h-1 w-10 bg-brand" />
               <p className="mt-6 text-base leading-relaxed text-white/60 md:text-lg">
-                Un libro pensado para quien quiere pasar del conocimiento a la
-                acción. No solo leer — aplicar, practicar y transformar.
+                {book.subtitle}
               </p>
+              <a
+                href={book.buyLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary mt-10 inline-flex"
+              >
+                Comprar el libro
+              </a>
             </Reveal>
 
           </div>
@@ -78,6 +78,9 @@ export default function LibroPage() {
             Qué incluye
           </h2>
           <div className="mt-3 h-1 w-10 bg-brand" />
+          <p className="mt-5 text-base leading-relaxed text-ink/60">
+            {book.synopsis}
+          </p>
         </Reveal>
 
         <div className="grid grid-cols-1 gap-0 border border-ink/8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
@@ -116,25 +119,29 @@ export default function LibroPage() {
         </Reveal>
       </SectionWrapper>
 
-      {/* ─── 4 · WAITLIST ─── */}
+      {/* ─── 4 · COMPRAR ─── */}
       <SectionWrapper variant="light">
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-2xl text-center">
           <Reveal>
-            <p className="label flex items-center gap-3 text-brand">
+            <p className="label flex items-center justify-center gap-3 text-brand">
               <span className="inline-block h-px w-8 bg-accent" />
-              Waitlist
+              Conseguilo ya
             </p>
             <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight text-ink">
-              Avisame cuando esté disponible
+              Empezá a leerlo hoy
             </h2>
-            <div className="mt-3 h-1 w-10 bg-brand" />
+            <div className="mx-auto mt-3 h-1 w-10 bg-brand" />
             <p className="mt-5 text-base leading-relaxed text-ink/60">
-              Dejá tu email y te notificamos en cuanto el libro esté listo.
-              Sin spam — solo el aviso.
+              {book.title} ya está disponible.
             </p>
-          </Reveal>
-          <Reveal delay={0.1} className="mt-10">
-            <WaitlistForm />
+            <a
+              href={book.buyLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-10 inline-flex"
+            >
+              Comprar el libro
+            </a>
           </Reveal>
         </div>
       </SectionWrapper>
@@ -156,7 +163,12 @@ export default function LibroPage() {
               >
                 Escuchar el podcast
               </a>
-              <a href="/comunidad" className="btn-ghost-brand">
+              <a
+                href={community.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost-brand"
+              >
                 Unirme a la comunidad
               </a>
             </div>

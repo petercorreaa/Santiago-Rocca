@@ -20,14 +20,15 @@ export const navLinks: NavLink[] = [
   { label: "Inicio", href: "/" },
   { label: "Sobre mí", href: "/sobre-mi" },
   { label: "Vive para Contarlo", href: "/vive-para-contarlo" },
+  { label: "Libro", href: "/libro" },
   { label: "Comunidad", href: "/comunidad" },
   { label: "Contacto", href: "/contacto" },
 ];
 
 export const social = {
   instagram: { label: "Instagram", href: "https://www.instagram.com/santiagorocca" },
-  youtube: { label: "YouTube", href: "#" },
-  spotify: { label: "Spotify", href: "#" },
+  youtube: { label: "YouTube", href: "https://www.youtube.com/channel/UCkYBD_iWej0aGUE2rwlF-Fw" },
+  spotify: { label: "Spotify", href: "https://open.spotify.com/show/4Q2IgSrlVU61LQzlX6hzMv" },
 };
 
 export const contactEmail = "Santiagorocca2017@gmail.com";
@@ -136,7 +137,10 @@ export const home = {
   communityCta: {
     title: "Sumate a la comunidad",
     text: "Recibí reflexiones, resúmenes de libros, recomendaciones y desafíos directamente en tu WhatsApp. Un espacio para crecer todos los días.",
-    cta: { label: "Unirme a la comunidad", href: "/comunidad" },
+    cta: {
+      label: "Unirme a la comunidad",
+      href: "https://chat.whatsapp.com/LxfhQ9o3sWYFRCpIzvLVhk?s=cl&p=i&mlu=4&amv=0",
+    },
   },
 };
 
@@ -306,7 +310,14 @@ export const podcast = {
 // ---------------------------------------------------------------------------
 
 export const book = {
-  status: "En desarrollo",
+  status: "Disponible",
+  title: "¿Qué hacen distinto?",
+  subtitle:
+    "Qué separa a las personas que logran lo que se proponen de las que no. Basado en las ideas de Napoleon Hill, Jim Rohn, Brian Tracy, Tony Robbins, Bob Proctor y Earl Nightingale.",
+  synopsis:
+    "13 capítulos que reúnen los principios que se repiten entre quienes construyen la vida que quieren: éxito, metas, creencias, deseo, pensamientos, salud y energía, manejo del tiempo y resolución de problemas. Con ejercicios prácticos para pasar del conocimiento a la acción.",
+  cover: "/Libro/portada.png",
+  buyLink: "https://go.hotmart.com/J107008561I",
   includes: [
     "Libro digital",
     "Audiolibro",
@@ -324,6 +335,7 @@ export const book = {
 
 export const community = {
   channel: "WhatsApp",
+  whatsappLink: "https://chat.whatsapp.com/LxfhQ9o3sWYFRCpIzvLVhk?s=cl&p=i&mlu=4&amv=0",
   content: [
     "Reflexiones",
     "Resúmenes de libros",

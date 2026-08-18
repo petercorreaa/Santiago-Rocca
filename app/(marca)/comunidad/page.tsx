@@ -121,7 +121,7 @@ export default function ComunidadPage() {
             y podés salir cuando quieras.
           </p>
           <a
-            href="#"
+            href={community.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary mt-10 inline-flex"

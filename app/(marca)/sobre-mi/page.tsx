@@ -3,7 +3,7 @@ import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
 import { Button } from "@/components/shared/Button";
 import { StoryBlock } from "@/components/sections/StoryBlock";
-import { story, about, social } from "@/lib/content";
+import { story, about, social, community } from "@/lib/content";
 
 export const metadata = {
   title: "Sobre mí — Santiago Rocca",
@@ -136,9 +136,14 @@ export default function SobreMiPage() {
           {/* Botones principales */}
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button href="/vive-para-contarlo">Escuchá el podcast</Button>
-            <Button href="/comunidad" variant="secondary" surface="dark">
+            <a
+              href={community.whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary-dark"
+            >
               Unirme a la comunidad
-            </Button>
+            </a>
           </div>
 
           {/* Redes sociales */}
