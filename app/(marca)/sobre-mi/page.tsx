@@ -48,9 +48,6 @@ export default function SobreMiPage() {
               {story.title}
             </h1>
             <div className="mt-6 h-1 w-20 bg-accent" />
-            <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/60 md:text-xl">
-              {about.bio}
-            </p>
           </Reveal>
         </div>
       </section>

@@ -47,6 +47,14 @@ export default function ComunidadPage() {
       <section className="relative flex min-h-[70vh] w-full items-end overflow-hidden bg-ink text-white">
         <div
           aria-hidden
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(10,10,10,0.6), rgba(10,10,10,0.6)), url(/Comunidad/togetherness.jpg)",
+          }}
+        />
+        <div
+          aria-hidden
           className="pointer-events-none absolute -right-40 top-0 h-[50rem] w-[50rem] rounded-full bg-accent/8 blur-3xl"
         />
         <div aria-hidden className="absolute left-0 top-0 h-full w-1 bg-brand" />
@@ -107,6 +115,18 @@ export default function ComunidadPage() {
             );
           })}
         </div>
+      </SectionWrapper>
+
+      {/* ─── FRASE ─── */}
+      <SectionWrapper variant="dark" contained={false}>
+        <Reveal>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/Comunidad/frase.png"
+            alt="El secreto de mi éxito fue rodearme de personas mejores que yo. — Andrew Carnegie"
+            className="block w-full"
+          />
+        </Reveal>
       </SectionWrapper>
 
       {/* ─── CTA WHATSAPP ─── */}
