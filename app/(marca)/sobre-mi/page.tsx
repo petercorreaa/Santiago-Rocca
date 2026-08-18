@@ -31,7 +31,7 @@ export default function SobreMiPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "linear-gradient(160deg, rgba(122,28,46,0.35) 0%, rgba(10,10,10,0.9) 60%), url(/images/sobre-mi-hero.jpg)",
+              "linear-gradient(160deg, rgba(122,28,46,0.35) 0%, rgba(10,10,10,0.9) 60%), url(/images/sobre-mi-hero.png)",
           }}
         />
 

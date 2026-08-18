@@ -1,9 +1,8 @@
 import { WhoIsHero } from "@/components/sections/WhoIsHero";
 import { ImpactQuote } from "@/components/sections/ImpactQuote";
 import { PillarsGrid } from "@/components/sections/PillarsGrid";
-import { PodcastPreview } from "@/components/sections/PodcastPreview";
 import { CommunityCTA } from "@/components/sections/CommunityCTA";
-import { home, podcast } from "@/lib/content";
+import { home } from "@/lib/content";
 
 export default function InicioPage() {
   return (
@@ -14,6 +13,7 @@ export default function InicioPage() {
         title={home.whoIs.title}
         paragraph={home.whoIs.paragraph}
         image={home.whoIs.image}
+        credentials={home.whoIs.credentials}
         cta={home.whoIs.cta}
         secondaryCta={home.hero.secondaryCta}
       />
@@ -29,17 +29,7 @@ export default function InicioPage() {
         items={home.pillars.items}
       />
 
-      {/* 4 · Preview del podcast */}
-      <PodcastPreview
-        eyebrow={home.podcastPreview.eyebrow}
-        name={podcast.name}
-        subtitle={podcast.description}
-        episodes={home.podcastPreview.episodes}
-        cta={home.podcastPreview.cta}
-        instagramPosts={podcast.instagramPosts}
-      />
-
-      {/* 5 · CTA final — comunidad */}
+      {/* 4 · CTA final — comunidad */}
       <CommunityCTA
         title={home.communityCta.title}
         text={home.communityCta.text}

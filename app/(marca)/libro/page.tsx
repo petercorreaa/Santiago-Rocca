@@ -1,4 +1,4 @@
-import { BookOpen, Headphones, ClipboardList, PenLine, PlayCircle } from "lucide-react";
+import { BookOpen, ClipboardList, PenLine, PlayCircle, Check, Quote } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
 import { book, community } from "@/lib/content";
@@ -10,7 +10,6 @@ export const metadata = {
 
 const features = [
   { icon: BookOpen,      label: "Libro digital" },
-  { icon: Headphones,    label: "Audiolibro" },
   { icon: ClipboardList, label: "Guía práctica" },
   { icon: PenLine,       label: "Ejercicios" },
   { icon: PlayCircle,    label: "Clases grabadas por capítulo" },
@@ -21,6 +20,14 @@ export default function LibroPage() {
     <>
       {/* ─── 1 · HERO ─── */}
       <section className="relative flex min-h-[90vh] w-full items-center overflow-hidden bg-ink text-white">
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(10,10,10,0.82), rgba(10,10,10,0.82)), url(/Libro/fondo-hero.png)",
+          }}
+        />
         <div aria-hidden className="pointer-events-none absolute -left-40 top-1/4 h-[50rem] w-[50rem] rounded-full bg-brand/10 blur-3xl" />
         <div aria-hidden className="pointer-events-none absolute right-0 bottom-0 h-[30rem] w-[30rem] rounded-full bg-accent/6 blur-3xl" />
         <div aria-hidden className="absolute left-0 top-0 h-full w-1 bg-brand" />
@@ -42,8 +49,8 @@ export default function LibroPage() {
 
             {/* Texto */}
             <Reveal className="order-1 md:order-2">
-              <span className="inline-flex items-center gap-2 rounded-sm border border-accent/40 bg-accent/10 px-4 py-1.5 text-xs font-bold uppercase tracking-label text-accent">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              <span className="inline-flex items-center gap-2 rounded-sm border border-emerald-400/40 bg-emerald-400/10 px-4 py-1.5 text-xs font-bold uppercase tracking-label text-emerald-400">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 Disponible ahora
               </span>
               <h1 className="mt-6 font-display text-[clamp(3rem,7vw,5.5rem)] font-extrabold uppercase leading-[0.9] tracking-hero">
@@ -78,12 +85,16 @@ export default function LibroPage() {
             Qué incluye
           </h2>
           <div className="mt-3 h-1 w-10 bg-brand" />
-          <p className="mt-5 text-base leading-relaxed text-ink/60">
+          <p className="mt-5 text-base font-bold leading-relaxed text-ink md:text-lg">
             {book.synopsis}
           </p>
+          <div className="mt-5 inline-flex items-center gap-3 rounded-sm border border-brand/30 bg-brand/5 px-5 py-3">
+            <span className="label text-brand">Bonus</span>
+            <span className="text-sm text-ink/70">{book.bonus}</span>
+          </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-0 border border-ink/8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-0 border border-ink/8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map(({ icon: Icon, label }, i) => (
             <Reveal key={label} delay={i * 0.07}>
               <div className="group flex flex-col gap-5 border border-ink/8 bg-paper p-8 transition-all duration-300 hover:border-accent hover:bg-ink hover:text-white">
@@ -99,7 +110,71 @@ export default function LibroPage() {
         </div>
       </SectionWrapper>
 
-      {/* ─── 3 · FILOSOFÍA EDITORIAL ─── */}
+      {/* ─── 3 · A QUIÉN LE SIRVE ─── */}
+      <SectionWrapper variant="dark">
+        <Reveal className="mb-12 max-w-2xl">
+          <p className="label flex items-center gap-3 text-accent">
+            <span className="inline-block h-px w-8 bg-accent" />
+            {book.audience.eyebrow}
+          </p>
+          <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight">
+            {book.audience.title}
+          </h2>
+          <div className="mt-3 h-1 w-10 bg-brand" />
+        </Reveal>
+
+        <div className="grid grid-cols-1 gap-x-10 gap-y-4 sm:grid-cols-2">
+          {book.audience.items.map((item, i) => (
+            <Reveal key={item} delay={i * 0.05} className="flex items-start gap-3">
+              <Check size={18} strokeWidth={2.5} className="mt-0.5 shrink-0 text-accent" />
+              <span className="text-base leading-relaxed text-white/70">{item}</span>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={0.3} className="mt-12 max-w-3xl border-l-4 border-accent pl-7">
+          <p className="text-base font-semibold leading-relaxed text-white/80 md:text-lg">
+            {book.audience.outcome}
+          </p>
+        </Reveal>
+      </SectionWrapper>
+
+      {/* ─── 4 · LA TRANSFORMACIÓN ─── */}
+      <SectionWrapper variant="light">
+        <Reveal className="mb-12 max-w-2xl">
+          <p className="label flex items-center gap-3 text-brand">
+            <span className="inline-block h-px w-8 bg-accent" />
+            {book.transformation.eyebrow}
+          </p>
+          <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight text-ink">
+            {book.transformation.title}
+          </h2>
+          <div className="mt-3 h-1 w-10 bg-brand" />
+        </Reveal>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <Reveal className="border border-ink/8 bg-paper p-8">
+            <p className="label text-ink/40">De</p>
+            <p className="mt-4 text-base leading-relaxed text-ink/60 md:text-lg">
+              {book.transformation.from}
+            </p>
+          </Reveal>
+          <Reveal delay={0.1} className="border border-brand/20 bg-brand/5 p-8">
+            <p className="label text-brand">A</p>
+            <p className="mt-4 text-base font-semibold leading-relaxed text-ink md:text-lg">
+              {book.transformation.to}
+            </p>
+          </Reveal>
+        </div>
+
+        <Reveal delay={0.2} className="mx-auto mt-12 max-w-2xl text-center">
+          <p className="font-display text-xl font-bold uppercase leading-snug tracking-tight text-ink md:text-2xl">
+            &ldquo;{book.transformation.quote}&rdquo;
+          </p>
+        </Reveal>
+      </SectionWrapper>
+
+      {/* ─── 5 · FILOSOFÍA EDITORIAL ─── */}
       <SectionWrapper variant="dark">
         <Reveal className="mx-auto max-w-4xl">
           <div className="mb-10 h-1 w-12 bg-accent" />
@@ -119,7 +194,7 @@ export default function LibroPage() {
         </Reveal>
       </SectionWrapper>
 
-      {/* ─── 4 · COMPRAR ─── */}
+      {/* ─── 6 · COMPRAR ─── */}
       <SectionWrapper variant="light">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal>
@@ -146,7 +221,32 @@ export default function LibroPage() {
         </div>
       </SectionWrapper>
 
-      {/* ─── 5 · CTA FINAL ─── */}
+      {/* ─── 7 · COMENTARIOS ─── */}
+      <SectionWrapper variant="dark">
+        <Reveal className="mb-12 max-w-2xl">
+          <p className="label flex items-center gap-3 text-accent">
+            <span className="inline-block h-px w-8 bg-accent" />
+            Redes
+          </p>
+          <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight">
+            Lo que dicen en mis redes
+          </h2>
+          <div className="mt-3 h-1 w-10 bg-brand" />
+        </Reveal>
+
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          {book.testimonials.map((quote, i) => (
+            <Reveal key={quote} delay={i * 0.1}>
+              <div className="flex h-full flex-col gap-5 rounded-sm border border-ink-border bg-ink-surface p-8 transition-colors duration-300 hover:border-accent">
+                <Quote size={22} strokeWidth={1.75} className="text-accent" />
+                <p className="text-base leading-relaxed text-white/70">&ldquo;{quote}&rdquo;</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </SectionWrapper>
+
+      {/* ─── 8 · CTA FINAL ─── */}
       <section className="w-full bg-accent text-ink">
         <div className="mx-auto w-full max-w-content px-6 py-24 md:px-8 md:py-28">
           <Reveal className="mx-auto max-w-3xl text-center">

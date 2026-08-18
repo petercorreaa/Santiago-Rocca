@@ -100,12 +100,17 @@ export const home = {
       },
     ],
   },
-  // Bloque "Quién es Santiago" (sección blanca, 2 columnas).
+  // Bloque "Quién es Santiago" (hero de Inicio, sin foto).
   whoIs: {
     eyebrow: "Quién soy",
     title: "Santiago Rocca",
     paragraph: about.bio,
-    image: "/images/santiago-placeholder.jpg",
+    image: "/images/quien-soy-hero.png",
+    credentials: [
+      "Autor de ¿Qué hacen distinto?",
+      "Host de Vive para Contarlo",
+      "+7 años en desarrollo personal",
+    ],
     cta: { label: "Conocé mi historia", href: "/sobre-mi" },
   },
   // Preview del podcast (sección oscura).
@@ -313,17 +318,44 @@ export const book = {
   status: "Disponible",
   title: "¿Qué hacen distinto?",
   subtitle:
-    "Qué separa a las personas que logran lo que se proponen de las que no. Basado en las ideas de Napoleon Hill, Jim Rohn, Brian Tracy, Tony Robbins, Bob Proctor y Earl Nightingale.",
+    "Qué separa a las personas que logran lo que se proponen de las que no. Basado en las mejores ideas de mis autores favoritos, Napoleon Hill, Jim Rohn, Brian Tracy, Tony Robbins, Bob Proctor y Kevin Trudeau.",
   synopsis:
     "13 capítulos que reúnen los principios que se repiten entre quienes construyen la vida que quieren: éxito, metas, creencias, deseo, pensamientos, salud y energía, manejo del tiempo y resolución de problemas. Con ejercicios prácticos para pasar del conocimiento a la acción.",
+  bonus: "Incluye un bonus: un ejercicio de autorreflexión de 30 preguntas.",
   cover: "/Libro/portada.png",
   buyLink: "https://go.hotmart.com/J107008561I",
-  includes: [
-    "Libro digital",
-    "Audiolibro",
-    "Guía práctica",
-    "Ejercicios",
-    "Clases grabadas por capítulo",
+  includes: ["Libro digital", "Guía práctica", "Ejercicios", "Clases grabadas por capítulo"],
+  audience: {
+    eyebrow: "Para quién es",
+    title: "¿De qué le va a servir a la audiencia?",
+    items: [
+      "Conocerse, entender qué quiere y cuáles son sus valores",
+      "Definir metas y una dirección",
+      "Detectar y cuestionar creencias limitantes",
+      "Trabajar su identidad y confianza",
+      "Desarrollar disciplina y mejores hábitos",
+      "Manejar mejor pensamientos y emociones",
+      "Administrar tiempo y energía",
+      "Tomar decisiones más conscientes",
+      "Enfrentar mejor los problemas",
+      "Comunicarse y relacionarse mejor",
+      "Transformar conocimiento en acción",
+    ],
+    outcome:
+      "Le sirve para dejar de consumir desarrollo personal como información y empezar a utilizarlo como una herramienta para cambiar su forma de pensar, actuar y vivir.",
+  },
+  transformation: {
+    eyebrow: "El cambio",
+    title: "La transformación",
+    from: "Vivir en automático, sin claridad, reaccionando a tus pensamientos, emociones, circunstancias y viejas creencias.",
+    to: "Conocerte, hacerte responsable, definir qué querés y empezar a dirigir conscientemente tus pensamientos, decisiones y acciones hacia la vida que querés construir.",
+    quote:
+      "No promete resultados. Promete darte la claridad, las herramientas y el método para que puedas empezar a construirlos.",
+  },
+  testimonials: [
+    "Santi explica desarrollo personal de una forma que realmente se entiende.",
+    "Desde que empecé a mirar tus videos cambié muchísimo mi forma de pensar.",
+    "Compré el libro y es increíble todo el valor que tiene.",
   ],
   philosophy:
     "El libro no se regala porque las personas valoran más aquello por lo que realizan una inversión. El objetivo es aumentar el compromiso y la implementación de los aprendizajes.",
