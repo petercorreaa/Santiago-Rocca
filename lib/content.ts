@@ -39,6 +39,7 @@ export const podcastEmail = "santiagoroccalivetell@gmail.com";
 // Botón flotante de WhatsApp (visible en todas las páginas).
 export const whatsappContact = {
   phone: "5491163014893",
+  displayPhone: "+54 9 11 6301-4893",
   message: "Hola! Como estas?",
   get href() {
     return `https://wa.me/${this.phone}?text=${encodeURIComponent(this.message)}`;
