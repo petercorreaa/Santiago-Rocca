@@ -343,7 +343,8 @@ export const book = {
     "Qué separa a las personas que logran lo que se proponen de las que no. Basado en las mejores ideas de mis autores favoritos, Napoleon Hill, Jim Rohn, Brian Tracy, Tony Robbins, Bob Proctor y Kevin Trudeau.",
   synopsis:
     "13 capítulos que reúnen los principios que se repiten entre quienes construyen la vida que quieren: éxito, metas, creencias, deseo, pensamientos, salud y energía, manejo del tiempo y resolución de problemas. Con ejercicios prácticos para pasar del conocimiento a la acción.",
-  bonus: "Incluye un bonus: un ejercicio de autorreflexión de 30 preguntas.",
+  bonus:
+    "Incluye un bonus: un ejercicio de autorreflexión de 30 preguntas, más 13 clases grabadas en audio, una por cada capítulo.",
   cover: "/Libro/portada.png",
   buyLink: "https://go.hotmart.com/J107008561I",
   includes: ["Libro digital", "Guía práctica", "Ejercicios", "Clases grabadas por capítulo"],

@@ -88,8 +88,8 @@ export default function LibroPage() {
           <p className="mt-5 text-base font-bold leading-relaxed text-ink md:text-lg">
             {book.synopsis}
           </p>
-          <div className="mt-5 inline-flex items-center gap-3 rounded-sm border border-brand/30 bg-brand/5 px-5 py-3">
-            <span className="label text-brand">Bonus</span>
+          <div className="mt-5 inline-flex items-center gap-3 rounded-sm border border-emerald-500/30 bg-emerald-500/5 px-5 py-3">
+            <span className="label text-emerald-600">Bonus</span>
             <span className="text-sm text-ink/70">{book.bonus}</span>
           </div>
         </Reveal>
