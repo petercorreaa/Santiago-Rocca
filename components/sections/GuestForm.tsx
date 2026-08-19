@@ -1,7 +1,9 @@
-import { Mail } from "lucide-react";
+import { Mail, Sparkles, BookOpen, Lightbulb, Compass } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
-import { contactEmail } from "@/lib/content";
+import { podcast, podcastEmail } from "@/lib/content";
+
+const promptIcons = [Sparkles, BookOpen, Lightbulb, Compass];
 
 export function GuestForm() {
   return (
@@ -21,13 +23,33 @@ export function GuestForm() {
         </p>
       </Reveal>
 
-      <Reveal delay={0.1} className="mt-12">
+      <Reveal delay={0.08} className="mt-10">
+        <p className="label mb-5 text-white/40">Contame qué le podés aportar a la audiencia</p>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {podcast.guestValuePrompts.map((prompt, i) => {
+            const Icon = promptIcons[i] ?? Sparkles;
+            return (
+              <div
+                key={prompt}
+                className="flex flex-col gap-4 rounded-sm border border-ink-border bg-ink-surface p-6"
+              >
+                <span className="flex h-10 w-10 items-center justify-center rounded-sm bg-brand/15 text-accent">
+                  <Icon size={20} strokeWidth={1.75} />
+                </span>
+                <p className="text-sm leading-relaxed text-white/70">{prompt}</p>
+              </div>
+            );
+          })}
+        </div>
+      </Reveal>
+
+      <Reveal delay={0.15} className="mt-10">
         <a
-          href={`mailto:${contactEmail}?subject=${encodeURIComponent("Quiero ser invitado en Vive para Contarlo")}`}
+          href={`mailto:${podcastEmail}?subject=${encodeURIComponent("Quiero ser invitado en Vive para Contarlo")}`}
           className="btn-primary"
         >
           <Mail size={17} strokeWidth={1.75} />
-          {contactEmail}
+          {podcastEmail}
         </a>
       </Reveal>
     </SectionWrapper>

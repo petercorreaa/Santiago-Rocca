@@ -195,9 +195,13 @@ export default async function ViveParaContarloPage() {
               ¿De qué se trata?
             </h2>
             <div className="mt-3 h-1 w-10 bg-brand" />
-            <p className="mt-6 text-base leading-relaxed text-ink/70 md:text-lg">
-              {podcast.description}
-            </p>
+            <div className="mt-6 flex flex-col gap-4">
+              {podcast.description.map((paragraph) => (
+                <p key={paragraph} className="text-base leading-relaxed text-ink/70 md:text-lg">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </Reveal>
 
           {/* Objetivos */}
@@ -224,7 +228,7 @@ export default async function ViveParaContarloPage() {
           4 · TIPOS DE INVITADOS
       ───────────────────────────────────────────── */}
       <SectionWrapper variant="dark">
-        <Reveal className="max-w-2xl">
+        <Reveal className="max-w-3xl">
           <p className="label flex items-center gap-3 text-accent">
             <span className="inline-block h-px w-8 bg-accent" />
             Invitados
@@ -234,7 +238,7 @@ export default async function ViveParaContarloPage() {
           </h2>
           <div className="mt-4 h-1 w-10 bg-brand" />
           <p className="mt-5 text-base leading-relaxed text-white/50 md:text-lg">
-            Cualquier persona con una historia que enseñe algo.
+            {podcast.guestIntro}
           </p>
         </Reveal>
 

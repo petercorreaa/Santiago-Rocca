@@ -33,6 +33,18 @@ export const social = {
 
 export const contactEmail = "Santiagorocca2017@gmail.com";
 
+// Mail dedicado a invitados y sponsors del podcast.
+export const podcastEmail = "santiagoroccalivetell@gmail.com";
+
+// Botón flotante de WhatsApp (visible en todas las páginas).
+export const whatsappContact = {
+  phone: "5491163014893",
+  message: "Hola! Como estas?",
+  get href() {
+    return `https://wa.me/${this.phone}?text=${encodeURIComponent(this.message)}`;
+  },
+};
+
 // ---------------------------------------------------------------------------
 // Quién es Santiago / Misión
 // ---------------------------------------------------------------------------
@@ -219,15 +231,18 @@ export const story = {
 
 export const podcast = {
   name: "Vive para Contarlo",
-  meaning:
-    "Vivir para contarlo significa vivir experiencias que transforman. Cuanto más vive una persona, más aprende. Cuanto más aprende, más tiene para compartir. La vida se construye a través de historias, relaciones, desafíos y aprendizajes.",
-  description:
-    "Relatos e historias que inspiran, enseñan y transforman. Conversaciones con personas que superaron desafíos, lograron resultados extraordinarios o desarrollaron aprendizajes valiosos que merecen ser compartidos.",
+  meaning: "Relatos de historias que inspiran, enseñan y transforman.",
+  description: [
+    "Conversamos con personas que tienen una historia, una experiencia o un aprendizaje que vale la pena compartir. Personas que, además de contar su recorrido, aportan valor desde aquello que hacen y dominan: comparten las herramientas, conocimientos, decisiones y aprendizajes que las ayudaron a crecer y alcanzar sus propios resultados.",
+    "La idea es que cada conversación no solo inspire, sino que también enseñe algo concreto que quien escucha pueda llevarse y aplicar en su propia vida.",
+  ],
   objectives: [
     "Enseñar a través del entretenimiento.",
     "Generar conversaciones profundas, educativas y prácticas.",
     "Que cada episodio deje una enseñanza aplicable.",
   ],
+  guestIntro:
+    "Buscamos relatos que enseñen algo y que ayuden a entender mejor cómo pensamos, cómo decidimos y cómo podemos crecer. Hablamos de desarrollo personal, mentalidad, disciplina, hábitos, comunicación, trabajo, desafíos, errores y aprendizajes: todo lo que pueda inspirar a alguien a mejorar algún aspecto de su vida. Porque detrás de cada persona hay una historia, y detrás de cada historia, una enseñanza.",
   guestTypes: [
     "Empresarios",
     "Emprendedores",
@@ -236,6 +251,13 @@ export const podcast = {
     "Autores",
     "Comunicadores",
     "Personas con historias extraordinarias",
+  ],
+  // Categorías para orientar a quien quiere ser invitado sobre qué contar en el mail.
+  guestValuePrompts: [
+    "Una experiencia o historia que marcó tu vida",
+    "Un conocimiento o habilidad que dominás",
+    "Un aprendizaje que le puede servir a la audiencia",
+    "Una perspectiva distinta sobre algún tema",
   ],
   episodes: [
     {

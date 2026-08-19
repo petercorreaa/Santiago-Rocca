@@ -3,6 +3,7 @@ import { Space_Grotesk, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/shared/Navbar";
 import { Footer } from "@/components/shared/Footer";
+import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 
 // Barlow Condensed — display / heroes (impacto bold condensado)
 const barlow = Barlow_Condensed({
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 import { Mail } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
-import { contactEmail } from "@/lib/content";
+import { podcastEmail } from "@/lib/content";
 
 export function SponsorForm() {
   return (
@@ -23,11 +23,11 @@ export function SponsorForm() {
 
       <Reveal delay={0.1} className="mt-12">
         <a
-          href={`mailto:${contactEmail}?subject=${encodeURIComponent("Consulta de sponsors")}`}
+          href={`mailto:${podcastEmail}?subject=${encodeURIComponent("Consulta de sponsors")}`}
           className="btn-secondary-light"
         >
           <Mail size={17} strokeWidth={1.75} />
-          {contactEmail}
+          {podcastEmail}
         </a>
       </Reveal>
     </SectionWrapper>
