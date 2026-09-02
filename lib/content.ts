@@ -21,6 +21,7 @@ export const navLinks: NavLink[] = [
   { label: "Sobre mí", href: "/sobre-mi" },
   { label: "Vive para Contarlo", href: "/vive-para-contarlo" },
   { label: "Libro", href: "/libro" },
+  { label: "Seminarios", href: "/seminarios" },
   { label: "Comunidad", href: "/comunidad" },
   { label: "Contacto", href: "/contacto" },
 ];
@@ -383,6 +384,99 @@ export const book = {
   ],
   philosophy:
     "El libro no se regala porque las personas valoran más aquello por lo que realizan una inversión. El objetivo es aumentar el compromiso y la implementación de los aprendizajes.",
+};
+
+// ---------------------------------------------------------------------------
+// Seminarios
+// ---------------------------------------------------------------------------
+
+export const seminars = {
+  eyebrow: "Formación",
+  title: "Seminarios",
+  subtitle: "Programas prácticos para llevar el desarrollo personal a resultados concretos.",
+  index: [
+    {
+      slug: "comunicacion",
+      name: "Comunicación",
+      description:
+        "Programa práctico de comunicación, persuasión y relaciones. 10 clases para comunicar mejor, conectar y vender e influir con más calidad.",
+      status: "Disponible",
+      href: "/seminarios/comunicacion",
+    },
+    {
+      slug: "desarrollo-personal",
+      name: "Desarrollo Personal",
+      description:
+        "El próximo seminario, para llevar los principios del libro y el podcast a la práctica.",
+      status: "Próximamente",
+      href: null,
+    },
+  ],
+};
+
+export const comunicacionSeminar = {
+  hero: {
+    title: "Programa práctico de comunicación, persuasión y relaciones",
+    subtitle:
+      "10 clases para comunicar mejor, conectar con las personas, mejorar tu presencia y aprender a vender e influir con mayor calidad.",
+    support: ["Clases grabadas", "Material de archivo", "Ejercicios", "Comunidad privada"],
+  },
+  why: {
+    eyebrow: "Por qué importa",
+    title: "Por qué la comunicación importa",
+    quote: "Primero buscá comprender; después, ser comprendido.",
+    quoteAuthor: "Stephen Covey",
+    quoteSource: "Los 7 hábitos de la gente altamente efectiva",
+    paragraph:
+      "Casi todo lo que conseguís en la vida pasa por otra persona. Una venta, un acuerdo, un vínculo, una idea que querés que prospere. Y sin embargo nadie nos enseña a comunicarnos: damos por sentado que hablar es lo mismo que comunicar. No lo es. La diferencia entre alguien que genera confianza en dos minutos y alguien que no la genera nunca no es carisma ni suerte — son habilidades concretas, y se aprenden.",
+  },
+  includes: {
+    eyebrow: "Contenido",
+    title: "¿Qué incluye el programa?",
+    intro:
+      "El objetivo es que entiendas los fundamentos de la comunicación y las relaciones humanas, y que puedas aplicarlos en situaciones reales: frente a cámara, en una venta, en una conversación, al crear contenido o al presentar una idea.",
+    items: [
+      "10 clases prácticas de aproximadamente 40 minutos, más espacio para preguntas",
+      "Todas quedan grabadas, para que puedas volver a verlas cuando quieras",
+      "Material de archivo en cada clase: conceptos, resúmenes, herramientas y recursos para seguir practicando",
+      "Ejercicios obligatorios para llevar cada concepto a la práctica",
+      "Devolución personalizada sobre lo que hacés bien y lo que podés mejorar",
+      "Comunidad privada de WhatsApp dedicada exclusivamente a oratoria y comunicación, con tips, ejemplos y recursos extra",
+    ],
+  },
+  closing:
+    "La idea no es que termines sabiendo más teoría. Es que empieces a observar mejor, preguntar mejor, expresarte mejor, y a entender qué hace que una comunicación genere confianza, atención, emoción e influencia.",
+  pricing: {
+    eyebrow: "Inversión",
+    title: "Elegí tu plan",
+    features: [
+      "10 clases prácticas grabadas",
+      "Material de archivo",
+      "Ejercicios",
+      "Devolución personalizada",
+      "Clases en vivo, una por semana",
+      "Comunidad privada de WhatsApp",
+    ],
+    plans: [
+      {
+        name: "Seminario grabado",
+        price: "$80.000",
+        included: [true, true, true, false, false, false],
+        highlight: false,
+      },
+      {
+        name: "Seminario + en vivo",
+        price: "$250.000",
+        included: [true, true, true, true, true, true],
+        highlight: true,
+      },
+    ],
+    cta: {
+      title: "Anotate por WhatsApp",
+      text: "Enviá un mensaje para completar tu inscripción.",
+      message: "Hola! Quiero anotarme al seminario de Comunicación.",
+    },
+  },
 };
 
 // ---------------------------------------------------------------------------
