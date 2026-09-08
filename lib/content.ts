@@ -443,6 +443,7 @@ export const comunicacionSeminar = {
       "Devolución personalizada sobre lo que hacés bien y lo que podés mejorar",
       "Comunidad privada de WhatsApp dedicada exclusivamente a oratoria y comunicación, con tips, ejemplos y recursos extra",
     ],
+    programLink: "https://docs.google.com/document/d/1pISaksjJ3d0CV9hEbLIrEtQRdqsUQ7e4czuU-BASEaI/edit?tab=t.0",
   },
   closing:
     "La idea no es que termines sabiendo más teoría. Es que empieces a observar mejor, preguntar mejor, expresarte mejor, y a entender qué hace que una comunicación genere confianza, atención, emoción e influencia.",

@@ -102,6 +102,17 @@ export default function SeminarioComunicacionPage() {
             );
           })}
         </div>
+
+        <Reveal delay={0.15} className="mt-10">
+          <a
+            href={seminar.includes.programLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary-dark"
+          >
+            Ver el programa completo acá
+          </a>
+        </Reveal>
       </SectionWrapper>
 
       {/* ─── 4 · INVERSIÓN ─── */}
