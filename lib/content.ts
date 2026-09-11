@@ -23,7 +23,6 @@ export const navLinks: NavLink[] = [
   { label: "Libro", href: "/libro" },
   { label: "Seminarios", href: "/seminarios" },
   { label: "Comunidad", href: "/comunidad" },
-  { label: "Contacto", href: "/contacto" },
 ];
 
 export const social = {
