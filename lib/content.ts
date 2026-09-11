@@ -17,8 +17,6 @@ export const site = {
 export type NavLink = { label: string; href: string };
 
 export const navLinks: NavLink[] = [
-  { label: "Inicio", href: "/" },
-  { label: "Sobre mí", href: "/sobre-mi" },
   { label: "Vive para Contarlo", href: "/vive-para-contarlo" },
   { label: "Libro", href: "/libro" },
   { label: "Seminarios", href: "/seminarios" },
@@ -124,7 +122,7 @@ export const home = {
       "Host de Vive para Contarlo",
       "+7 años en desarrollo personal",
     ],
-    cta: { label: "Conocé mi historia", href: "/sobre-mi" },
+    cta: { label: "Conocé mi historia", href: "#sobre-mi" },
   },
   // Preview del podcast (sección oscura).
   podcastPreview: {
