@@ -396,7 +396,7 @@ export const seminars = {
       slug: "comunicacion",
       name: "Comunicación",
       description:
-        "Programa práctico de comunicación, persuasión y relaciones. 10 clases para comunicar mejor, conectar y vender e influir con más calidad.",
+        "Programa práctico de comunicación, persuasión y relaciones. Aprendé a comunicar mejor, conectar y vender e influir con más calidad.",
       status: "Disponible",
       href: "/seminarios/comunicacion",
     },
@@ -415,7 +415,7 @@ export const comunicacionSeminar = {
   hero: {
     title: "Programa práctico de comunicación, persuasión y relaciones",
     subtitle:
-      "10 clases para comunicar mejor, conectar con las personas, mejorar tu presencia y aprender a vender e influir con mayor calidad.",
+      "Aprendé a comunicar mejor, conectar con las personas, mejorar tu presencia, y a vender e influir con mayor calidad.",
     support: ["Clases grabadas", "Material de archivo", "Ejercicios", "Comunidad privada"],
   },
   promise: {
