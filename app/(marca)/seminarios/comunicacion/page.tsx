@@ -1,4 +1,4 @@
-import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, X } from "lucide-react";
+import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, X, Plus } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
 import { comunicacionSeminar as seminar, whatsappContact } from "@/lib/content";
@@ -235,6 +235,51 @@ export default function SeminarioComunicacionPage() {
             {seminar.closing}
           </p>
         </Reveal>
+      </SectionWrapper>
+
+      {/* ─── 6 · PREGUNTAS FRECUENTES ─── */}
+      <SectionWrapper variant="light">
+        <div className="mx-auto max-w-3xl">
+          <Reveal className="mb-12">
+            <p className="label flex items-center gap-3 text-brand">
+              <span className="inline-block h-px w-8 bg-accent" />
+              {seminar.faq.eyebrow}
+            </p>
+            <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight text-ink">
+              {seminar.faq.title}
+            </h2>
+            <div className="mt-3 h-1 w-10 bg-brand" />
+          </Reveal>
+
+          <div className="flex flex-col border-t border-ink/10">
+            {seminar.faq.items.map((item) => (
+              <details key={item.q} className="group border-b border-ink/10">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 text-left font-display text-lg font-bold uppercase tracking-tight text-ink transition-colors hover:text-brand md:text-xl [&::-webkit-details-marker]:hidden">
+                  {item.q}
+                  <Plus
+                    size={22}
+                    strokeWidth={2}
+                    className="shrink-0 text-brand transition-transform duration-300 group-open:rotate-45"
+                  />
+                </summary>
+                <p className="pb-6 pr-10 text-base leading-relaxed text-ink/70">{item.a}</p>
+              </details>
+            ))}
+          </div>
+
+          <p className="mt-10 text-sm text-ink/50">
+            ¿Te quedó otra duda?{" "}
+            <a
+              href={whatsappContact.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-brand underline underline-offset-4 hover:text-brand-hover"
+            >
+              Escribime por WhatsApp
+            </a>
+            .
+          </p>
+        </div>
       </SectionWrapper>
     </>
   );

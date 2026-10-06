@@ -468,6 +468,52 @@ export const comunicacionSeminar = {
   },
   closing:
     "La idea no es que termines sabiendo más teoría. Es que empieces a observar mejor, preguntar mejor, expresarte mejor, y a entender qué hace que una comunicación genere confianza, atención, emoción e influencia.",
+  faq: {
+    eyebrow: "Dudas",
+    title: "Preguntas frecuentes",
+    items: [
+      {
+        q: "¿Para quién es este seminario? ¿Hace falta experiencia previa?",
+        a: "Es para cualquiera que quiera comunicar mejor: expresarse con más seguridad, perder la vergüenza, persuadir, ganar amigos, vender más, crear mejor contenido y contar lo que hace, su trabajo y su vida con más impacto. No hace falta experiencia previa.",
+      },
+      {
+        q: "¿Me sirve si quiero vender o crear contenido, no solo hablar mejor?",
+        a: "Sí, es clave. Hoy la mejor manera de vender es saber comunicar: le va mejor a quien sabe relacionarse que a quien solo conoce técnicas de venta. Vemos clases de ventas para mejorar tus resultados, y para crear contenido aprendés a armar mensajes que tu audiencia entienda y con los que conecte. De yapa, hablás y te relacionás mejor.",
+      },
+      {
+        q: "Soy muy tímido, ¿me va a servir igual?",
+        a: "Sí. Comunicando mejor te animás más, y por eso vas a ir perdiendo la vergüenza. Trabajamos entender a la otra persona, escuchar, hacer buenas preguntas y cómo funciona el ego.",
+      },
+      {
+        q: "¿Qué diferencia hay con mirar videos gratis en YouTube?",
+        a: "Cuando invertís en un programa lo tomás más en serio y lo vivís más. Además aprendés de alguien que ya está logrando resultados, con atención personalizada y la posibilidad de hacer preguntas. No es lo mismo aprender gratis que aprender de algo en lo que invertiste.",
+      },
+      {
+        q: "¿Las clases son en vivo o grabadas? ¿Puedo verlas cuando quiero?",
+        a: "Hay de las dos: clases pregrabadas y clases en vivo, que se coordinan semana a semana con los alumnos. Todas quedan grabadas en un drive, así que podés verlas cuando quieras.",
+      },
+      {
+        q: "¿Cuánto tiempo tengo acceso?",
+        a: "De por vida. Una vez que entrás, tenés acceso a las clases y a todo el contenido nuevo que se vaya sumando, y a la comunidad en el plan que la incluye.",
+      },
+      {
+        q: "¿Cada cuánto se agrega contenido nuevo?",
+        a: "Varias veces por mes. Sumamos contenido del podcast y contenido extra para mejorar en distintas áreas de la comunicación: redes, publicidad, ventas, trucos, hacks y cómo mejorar tu vocabulario. Además, todas las semanas mandamos más información a la comunidad privada.",
+      },
+      {
+        q: "¿Cómo funciona la comunidad de WhatsApp? ¿Respondés vos?",
+        a: "La manejo yo junto con mi equipo: entre todos respondemos y estamos atentos a lo que necesites.",
+      },
+      {
+        q: "¿Cuánto sale y cómo se paga? ¿Se puede en cuotas?",
+        a: "El Seminario grabado sale $80.000 e incluye las clases pregrabadas, sin comunidad ni clases en vivo. Se paga desde Hotmart, con distintos medios de pago, y se puede pagar en 3 cuotas.",
+      },
+      {
+        q: "¿Hay garantía?",
+        a: "Sí, tenés 7 días de garantía.",
+      },
+    ],
+  },
   pricing: {
     eyebrow: "Inversión",
     title: "Elegí tu plan",
