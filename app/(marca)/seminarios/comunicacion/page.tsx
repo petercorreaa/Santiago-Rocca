@@ -15,6 +15,14 @@ export default function SeminarioComunicacionPage() {
     <>
       {/* ─── 1 · HERO ─── */}
       <section className="relative flex min-h-[70vh] w-full items-center overflow-hidden bg-ink text-white">
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-cover bg-[center_15%]"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.78) 55%, rgba(10,10,10,0.68) 100%), url(/Seminarios/comunicacion-hero.jpg)",
+          }}
+        />
         <div aria-hidden className="pointer-events-none absolute -left-40 top-1/4 h-[50rem] w-[50rem] rounded-full bg-brand/10 blur-3xl" />
         <div aria-hidden className="pointer-events-none absolute right-0 bottom-0 h-[30rem] w-[30rem] rounded-full bg-accent/6 blur-3xl" />
         <div aria-hidden className="absolute left-0 top-0 h-full w-1 bg-brand" />
