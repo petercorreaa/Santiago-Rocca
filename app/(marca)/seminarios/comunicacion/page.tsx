@@ -1,4 +1,4 @@
-import { PlayCircle, Video, BookOpen, PenLine, ClipboardCheck, Users, Check, X } from "lucide-react";
+import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, X } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
 import { comunicacionSeminar as seminar, whatsappContact } from "@/lib/content";
@@ -8,7 +8,7 @@ export const metadata = {
   description: seminar.hero.subtitle,
 };
 
-const includeIcons = [PlayCircle, Video, BookOpen, PenLine, ClipboardCheck, Users];
+const includeIcons = [PlayCircle, Library, Wrench, Users, InfinityIcon];
 
 export default function SeminarioComunicacionPage() {
   return (
@@ -40,6 +40,22 @@ export default function SeminarioComunicacionPage() {
                 </span>
               ))}
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ─── PROMESA ─── */}
+      <section className="w-full bg-accent text-ink">
+        <div className="mx-auto w-full max-w-content px-6 py-20 md:px-8 md:py-28">
+          <Reveal className="mx-auto max-w-4xl text-center">
+            <p className="label text-ink/60">{seminar.promise.eyebrow}</p>
+            <h2 className="mt-5 font-display text-[clamp(3rem,8vw,6.5rem)] font-extrabold uppercase leading-[0.9] tracking-hero">
+              {seminar.promise.title}
+            </h2>
+            <div className="mx-auto mt-6 h-1 w-16 bg-ink" />
+            <p className="mx-auto mt-8 max-w-2xl text-lg font-semibold leading-relaxed text-ink/80 md:text-2xl">
+              {seminar.promise.text}
+            </p>
           </Reveal>
         </div>
       </section>
@@ -87,16 +103,34 @@ export default function SeminarioComunicacionPage() {
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {seminar.includes.items.map((text, i) => {
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+          {seminar.includes.items.map((item, i) => {
             const Icon = includeIcons[i] ?? PlayCircle;
+            const isLast = i === seminar.includes.items.length - 1;
             return (
-              <Reveal key={text} delay={i * 0.07}>
-                <div className="flex h-full flex-col gap-5 rounded-sm border border-ink-border bg-ink-surface p-8 transition-colors duration-300 hover:border-accent">
+              <Reveal key={item.title} delay={i * 0.07} className={isLast ? "md:col-span-2" : ""}>
+                <div
+                  className={`flex h-full flex-col gap-5 rounded-sm border p-8 transition-colors duration-300 hover:border-accent md:p-10 ${
+                    isLast ? "border-accent/50 bg-accent/5" : "border-ink-border bg-ink-surface"
+                  }`}
+                >
                   <span className="flex h-12 w-12 items-center justify-center rounded-sm bg-brand/15 text-accent">
                     <Icon size={22} strokeWidth={1.75} />
                   </span>
-                  <p className="text-sm leading-relaxed text-white/70 md:text-base">{text}</p>
+                  <h3 className="font-display text-2xl font-bold uppercase tracking-tight">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-white/70 md:text-base">{item.text}</p>
+                  {item.bullets && (
+                    <ul className="flex flex-col gap-3">
+                      {item.bullets.map((bullet) => (
+                        <li key={bullet} className="flex items-start gap-3 text-sm leading-relaxed text-white/70 md:text-base">
+                          <Check size={18} strokeWidth={2.5} className="mt-0.5 shrink-0 text-accent" />
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </Reveal>
             );

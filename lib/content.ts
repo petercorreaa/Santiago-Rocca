@@ -418,6 +418,11 @@ export const comunicacionSeminar = {
       "10 clases para comunicar mejor, conectar con las personas, mejorar tu presencia y aprender a vender e influir con mayor calidad.",
     support: ["Clases grabadas", "Material de archivo", "Ejercicios", "Comunidad privada"],
   },
+  promise: {
+    eyebrow: "La promesa",
+    title: "Hacé que te elijan",
+    text: "Aprendé a leer a las personas, conectar en minutos y comunicar tus ideas para generar confianza, ventas y contenido que funcione.",
+  },
   why: {
     eyebrow: "Por qué importa",
     title: "Por qué la comunicación importa",
@@ -433,13 +438,32 @@ export const comunicacionSeminar = {
     intro:
       "El objetivo es que entiendas los fundamentos de la comunicación y las relaciones humanas, y que puedas aplicarlos en situaciones reales: frente a cámara, en una venta, en una conversación, al crear contenido o al presentar una idea.",
     items: [
-      "10 clases prácticas de aproximadamente 40 minutos, más espacio para preguntas",
-      "Todas quedan grabadas, para que puedas volver a verlas cuando quieras",
-      "Material de archivo en cada clase: conceptos, resúmenes, herramientas y recursos para seguir practicando",
-      "Ejercicios obligatorios para llevar cada concepto a la práctica",
-      "Devolución personalizada sobre lo que hacés bien y lo que podés mejorar",
-      "Comunidad privada de WhatsApp dedicada exclusivamente a oratoria y comunicación, con tips, ejemplos y recursos extra",
-    ],
+      {
+        title: "Las clases de comunicación",
+        text: "La ruta principal, en orden. Aprendés a entender qué mueve a cada persona, a conectar sin forzar, a persuadir con ética, a armar un discurso que se recuerde y a usar tu voz y tu cuerpo a favor. Cada clase trae material de archivo, ejercicios prácticos y devolución sobre lo que hacés.",
+      },
+      {
+        title: "Contenido extra",
+        text: "Una biblioteca que crece todos los meses:",
+        bullets: [
+          "Clases pregrabadas para profundizar en cada tema.",
+          "Creación de contenido: estrategia, organización, formatos y los atajos que uso para crear y publicar.",
+          "El podcast por dentro: fragmentos de Vive Para Contarlo comentados, para ver cómo comunican personas reales.",
+        ],
+      },
+      {
+        title: "Kit de herramientas",
+        text: "Plantillas listas para usar: estructura de discurso, persuasión PAS, banco de hooks y ficha para leer a las personas. Las abrís, las completás y salís con el mensaje armado.",
+      },
+      {
+        title: "Comunidad privada",
+        text: "Un grupo de WhatsApp solo para comunicación: tips, ejemplos y recursos extra para seguir practicando fuera de las clases.",
+      },
+      {
+        title: "Acceso de por vida, siempre actualizado",
+        text: "Entrás una vez y es tuyo para siempre. Cada clase nueva, cada recurso y cada mejora que se sume al programa ya está incluido, sin pagar de nuevo. El programa que comprás hoy va a ser más completo dentro de seis meses, y más completo todavía dentro de un año. Y vos vas a tener acceso a todo.",
+      },
+    ] as { title: string; text: string; bullets?: string[] }[],
     programLink: "https://docs.google.com/document/d/1pISaksjJ3d0CV9hEbLIrEtQRdqsUQ7e4czuU-BASEaI/edit?tab=t.0",
   },
   closing:
