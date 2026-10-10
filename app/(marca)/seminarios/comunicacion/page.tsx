@@ -1,4 +1,4 @@
-import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, X, Plus } from "lucide-react";
+import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, X, Plus, CreditCard, ShieldCheck } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
 import { comunicacionSeminar as seminar, whatsappContact } from "@/lib/content";
@@ -214,6 +214,22 @@ export default function SeminarioComunicacionPage() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.15} className="mt-6">
+          <div className="grid grid-cols-1 divide-y divide-white/15 rounded-sm border border-accent/40 bg-ink md:grid-cols-2 md:divide-x md:divide-y-0">
+            {seminar.pricing.assurances.map((text, i) => {
+              const Icon = i === 0 ? CreditCard : ShieldCheck;
+              return (
+                <div key={text} className="flex items-center justify-center gap-4 px-6 py-6 md:py-8">
+                  <Icon size={30} strokeWidth={1.75} className="shrink-0 text-accent" />
+                  <p className="font-display text-xl font-extrabold uppercase tracking-tight text-white md:text-3xl">
+                    {text}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </Reveal>
 
         <Reveal delay={0.2} className="mx-auto mt-10 max-w-xl">
           <a

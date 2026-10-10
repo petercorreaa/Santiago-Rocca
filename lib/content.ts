@@ -506,7 +506,7 @@ export const comunicacionSeminar = {
       },
       {
         q: "¿Cuánto sale y cómo se paga? ¿Se puede en cuotas?",
-        a: "El Seminario grabado sale $80.000 e incluye las clases pregrabadas, sin comunidad ni clases en vivo. Se paga desde Hotmart, con distintos medios de pago, y se puede pagar en 3 cuotas.",
+        a: "El Seminario grabado sale $80.000 e incluye las clases pregrabadas, sin comunidad ni clases en vivo. Se paga desde Hotmart, con distintos medios de pago, y se puede pagar en 3 cuotas sin interés.",
       },
       {
         q: "¿Hay garantía?",
@@ -539,6 +539,7 @@ export const comunicacionSeminar = {
         highlight: true,
       },
     ],
+    assurances: ["3 cuotas sin interés", "Garantía de 7 días"],
     cta: {
       title: "Anotate por WhatsApp",
       text: "Enviá un mensaje para completar tu inscripción.",
