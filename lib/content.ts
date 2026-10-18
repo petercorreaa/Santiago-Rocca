@@ -413,10 +413,34 @@ export const seminars = {
 
 export const comunicacionSeminar = {
   hero: {
-    title: "Programa práctico de comunicación, persuasión y relaciones",
+    programName: "Programa práctico de comunicación, persuasión y relaciones",
+    title:
+      "¿Te cuesta expresarte, hablar frente a otras personas o transmitir el verdadero valor de lo que hacés?",
     subtitle:
-      "Aprendé a comunicar mejor, conectar con las personas, mejorar tu presencia, y a vender e influir con mayor calidad.",
+      "Aprendé herramientas prácticas de comunicación, oratoria, persuasión y relaciones humanas para aplicarlas en tu vida personal y profesional.",
     support: ["Clases grabadas", "Material de archivo", "Ejercicios", "Comunidad privada"],
+  },
+  situations: {
+    eyebrow: "Para qué te sirve",
+    title: "Situaciones en las que te sirve",
+    items: [
+      {
+        title: "Hablar con seguridad",
+        text: "Expresarte mejor, ordenar tus ideas y reducir el miedo a hablar frente a otros.",
+      },
+      {
+        title: "Relacionarte mejor",
+        text: "Iniciar conversaciones, escuchar y conectar con las personas.",
+      },
+      {
+        title: "Vender tus ideas",
+        text: "Explicar el valor de lo que ofrecés, resolver objeciones y generar confianza.",
+      },
+      {
+        title: "Crear contenido",
+        text: "Comunicarte frente a cámara, construir mensajes y captar la atención.",
+      },
+    ],
   },
   promise: {
     eyebrow: "La promesa",
@@ -518,7 +542,7 @@ export const comunicacionSeminar = {
     eyebrow: "Inversión",
     title: "Elegí tu plan",
     features: [
-      "10 clases prácticas grabadas",
+      "Clases grabadas",
       "Material de archivo",
       "Ejercicios",
       "Devolución personalizada",

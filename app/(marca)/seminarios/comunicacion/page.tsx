@@ -1,4 +1,4 @@
-import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, X, Plus, CreditCard, ShieldCheck } from "lucide-react";
+import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, X, Plus, CreditCard, ShieldCheck, Mic, Handshake, Lightbulb, Video } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
 import { comunicacionSeminar as seminar, whatsappContact } from "@/lib/content";
@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 const includeIcons = [PlayCircle, Library, Wrench, Users, InfinityIcon];
+const situationIcons = [Mic, Handshake, Lightbulb, Video];
 
 export default function SeminarioComunicacionPage() {
   return (
@@ -31,9 +32,9 @@ export default function SeminarioComunicacionPage() {
           <Reveal className="max-w-3xl">
             <p className="label flex items-center gap-3 text-accent">
               <span className="inline-block h-px w-8 bg-accent" />
-              Seminarios · Comunicación
+              {seminar.hero.programName}
             </p>
-            <h1 className="mt-6 font-display text-[clamp(2.5rem,6vw,5rem)] font-extrabold uppercase leading-[0.95] tracking-hero">
+            <h1 className="mt-6 font-display text-[clamp(2.25rem,5vw,4.25rem)] font-extrabold uppercase leading-[0.98] tracking-hero">
               {seminar.hero.title}
             </h1>
             <div className="mt-6 h-1 w-20 bg-accent" />
@@ -51,6 +52,41 @@ export default function SeminarioComunicacionPage() {
           </Reveal>
         </div>
       </section>
+
+      {/* ─── SITUACIONES ─── */}
+      <SectionWrapper variant="light">
+        <Reveal className="mb-12 max-w-2xl">
+          <p className="label flex items-center gap-3 text-brand">
+            <span className="inline-block h-px w-8 bg-accent" />
+            {seminar.situations.eyebrow}
+          </p>
+          <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight text-ink">
+            {seminar.situations.title}
+          </h2>
+          <div className="mt-3 h-1 w-10 bg-brand" />
+        </Reveal>
+
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {seminar.situations.items.map((item, i) => {
+            const Icon = situationIcons[i] ?? Mic;
+            return (
+              <Reveal key={item.title} delay={i * 0.08}>
+                <div className="group flex h-full flex-col gap-5 rounded-sm border border-ink/10 bg-paper p-8 transition-all duration-300 hover:border-accent hover:bg-ink hover:text-white">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-sm bg-brand/10 text-accent transition-colors duration-300 group-hover:bg-brand group-hover:text-white">
+                    <Icon size={22} strokeWidth={1.75} />
+                  </span>
+                  <h3 className="font-display text-2xl font-bold uppercase tracking-tight">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-ink/60 transition-colors group-hover:text-white/60 md:text-base">
+                    {item.text}
+                  </p>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
+      </SectionWrapper>
 
       {/* ─── PROMESA ─── */}
       <section className="w-full bg-accent text-ink">
