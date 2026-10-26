@@ -414,8 +414,11 @@ export const seminars = {
 export const comunicacionSeminar = {
   hero: {
     programName: "Programa práctico de comunicación, persuasión y relaciones",
-    title:
-      "¿Te cuesta expresarte, hablar frente a otras personas o transmitir el verdadero valor de lo que hacés?",
+    questions: [
+      "¿Te cuesta expresarte?",
+      "¿Te cuesta hablar frente a otras personas?",
+      "¿Te cuesta transmitir el verdadero valor de lo que hacés?",
+    ],
     subtitle:
       "Aprendé herramientas prácticas de comunicación, oratoria, persuasión y relaciones humanas para aplicarlas en tu vida personal y profesional.",
     support: ["Clases grabadas", "Material de archivo", "Ejercicios", "Comunidad privada"],

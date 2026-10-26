@@ -34,8 +34,12 @@ export default function SeminarioComunicacionPage() {
               <span className="inline-block h-px w-8 bg-accent" />
               {seminar.hero.programName}
             </p>
-            <h1 className="mt-6 font-display text-[clamp(2.25rem,5vw,4.25rem)] font-extrabold uppercase leading-[0.98] tracking-hero">
-              {seminar.hero.title}
+            <h1 className="mt-6 flex flex-col gap-4 font-display text-[clamp(2.25rem,5vw,4.25rem)] font-extrabold uppercase leading-[0.98] tracking-hero md:gap-6">
+              {seminar.hero.questions.map((question) => (
+                <span key={question} className="block">
+                  {question}
+                </span>
+              ))}
             </h1>
             <div className="mt-6 h-1 w-20 bg-accent" />
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/60 md:text-xl">
