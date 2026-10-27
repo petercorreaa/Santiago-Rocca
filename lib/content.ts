@@ -502,6 +502,66 @@ export const comunicacionSeminar = {
     closing:
       "Este seminario es esa respuesta. Lo que me llevó años y mucha prueba y error, ordenado en clases para que vos ganes esa confianza mucho más rápido.",
   },
+  cases: {
+    eyebrow: "Encuesta del seminario",
+    title: "Casos de éxito",
+    text: "Esto contestaron alumnos que están haciendo el seminario.",
+    items: [
+      {
+        name: "Damir",
+        headline: "Frenó todo y hablamos 10 minutos",
+        stage: "Mitad del seminario",
+        feeling: "Se siente mucho más seguro",
+        changed: "Dejó las muletillas, charla con facilidad y se fija en los detalles de cada persona.",
+        proof:
+          "Un compañero de trabajo pasaba a mil. Damir aplicó lo que vio en clase, hablarle a alguien de lo que le apasiona, y le preguntó por su torneo de jiu jitsu. Frenó en seco y charlaron 10 minutos.",
+        quote: "Un 10.",
+      },
+      {
+        name: "Francisco Arbelo",
+        headline: "Lo ayudé a resolverlo con sus propias respuestas",
+        stage: "Mitad del seminario",
+        feeling: "Un poco más seguro",
+        changed:
+          "Aprendió a empatizar, a entender qué le quiere decir el otro y a que su mensaje llegue. También sumó técnicas para grabar videos.",
+        proof:
+          "Una persona cercana tenía un problema. En vez de darle consejos, le hizo preguntas y, con sus propias respuestas, encontró la solución.",
+        quote:
+          "10/10. Muy buenas las clases, que tenga clases semanales y sobre todo la práctica, es esencial. Los archivos de práctica potencian un montón el programa.",
+      },
+      {
+        name: "Fernando Grau",
+        headline: "Aprendí a leer a las personas",
+        stage: "Mitad del seminario",
+        feeling: "Un poco más seguro",
+        changed:
+          "Lee mejor qué quiere cada persona y cómo se quiere mostrar. Sumó lenguaje corporal y los 7 pecados capitales.",
+        proof:
+          "Un compañero de equipo quería que lo vieran como talentoso en algo. Fernando se lo reconoció, el compañero se sintió mejor y quiere seguir juntándose con él.",
+        quote: "10/10.",
+      },
+      {
+        name: "Facundo Astudillo",
+        headline: "Ahora soy consciente de cómo me comunico",
+        stage: "Recién empieza",
+        feeling: "Se siente mucho más seguro",
+        changed:
+          "Más seguridad en la postura y los gestos, escucha más y mejor, habla más tranquilo y gana confianza y empatía.",
+        proof:
+          "Lo aplica todo el tiempo y ahora es consciente de cómo se comunica y de cómo lo percibe el otro.",
+        quote: "Es muy bueno, estoy muy conforme de haberlo tomado.",
+      },
+      {
+        name: "Valentino Indiveri",
+        headline: "Aprendí a contar historias",
+        stage: "Está terminando",
+        feeling: "Un poco más seguro",
+        changed: "Mejoró su forma de contar historias, siempre que habla con alguien.",
+        proof: "",
+        quote: "Muy útil para quienes quieran mejorar su comunicación.",
+      },
+    ],
+  },
   why: {
     eyebrow: "Por qué importa",
     title: "Por qué la comunicación importa",

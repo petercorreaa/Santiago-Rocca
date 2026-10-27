@@ -1,4 +1,4 @@
-import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, Plus, CreditCard, ShieldCheck, Mic, Handshake, Lightbulb, Video, ArrowUpRight } from "lucide-react";
+import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, Plus, CreditCard, ShieldCheck, Mic, Handshake, Lightbulb, Video, ArrowUpRight, Quote } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
 import { TikTokProfileEmbed } from "@/components/shared/TikTokProfileEmbed";
@@ -476,8 +476,83 @@ export default function SeminarioComunicacionPage() {
         </Reveal>
       </SectionWrapper>
 
+      {/* ─── CASOS DE ÉXITO (fila que va pasando) ─── */}
+      <SectionWrapper variant="light" contained={false}>
+        <div className="mx-auto mb-12 w-full max-w-content px-6 md:px-8">
+          <Reveal className="max-w-2xl">
+            <p className="label flex items-center gap-3 text-brand">
+              <span className="inline-block h-px w-8 bg-accent" />
+              {seminar.cases.eyebrow}
+            </p>
+            <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight text-ink">
+              {seminar.cases.title}
+            </h2>
+            <div className="mt-3 h-1 w-10 bg-brand" />
+            <p className="mt-5 text-base leading-relaxed text-ink/60 md:text-lg">{seminar.cases.text}</p>
+          </Reveal>
+        </div>
+
+        <div className="group relative overflow-hidden motion-reduce:overflow-x-auto">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-paper to-transparent md:w-24"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-paper to-transparent md:w-24"
+          />
+          <div
+            className="flex w-max animate-marquee gap-5 pr-5 hover:[animation-play-state:paused] motion-reduce:animate-none"
+            style={{ animationDuration: "90s" }}
+          >
+            {[0, 1].map((copy) =>
+              seminar.cases.items.map((c) => (
+                <article
+                  key={`${copy}-${c.name}`}
+                  aria-hidden={copy === 1}
+                  className="flex w-[300px] shrink-0 flex-col gap-5 rounded-sm border border-ink/10 bg-paper p-7 md:w-[380px] md:p-8"
+                >
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-semibold uppercase tracking-label">
+                    <span className="text-brand">{c.stage}</span>
+                    <span className="h-1 w-1 rounded-full bg-accent" />
+                    <span className="text-ink/50">{c.feeling}</span>
+                  </div>
+
+                  <div>
+                    <h3 className="font-display text-2xl font-extrabold uppercase leading-tight tracking-tight text-ink">
+                      {c.headline}
+                    </h3>
+                    <p className="mt-2 text-sm font-semibold text-ink/50">{c.name}</p>
+                  </div>
+
+                  <div className="flex flex-col gap-3 text-sm leading-relaxed text-ink/70">
+                    <p>
+                      <span className="font-semibold text-ink">Qué cambió: </span>
+                      {c.changed}
+                    </p>
+                    {c.proof && (
+                      <p>
+                        <span className="font-semibold text-ink">Prueba real: </span>
+                        {c.proof}
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="mt-auto flex gap-3 border-l-4 border-accent pl-5">
+                    <Quote size={18} strokeWidth={1.75} className="mt-0.5 shrink-0 text-accent" />
+                    <p className="text-sm font-semibold leading-relaxed text-ink">
+                      &ldquo;{c.quote}&rdquo;
+                    </p>
+                  </div>
+                </article>
+              )),
+            )}
+          </div>
+        </div>
+      </SectionWrapper>
+
       {/* ─── 6 · PREGUNTAS FRECUENTES ─── */}
-      <SectionWrapper variant="light">
+      <SectionWrapper variant="light" className="border-t border-ink/10">
         <div className="mx-auto max-w-3xl">
           <Reveal className="mb-12">
             <p className="label flex items-center gap-3 text-brand">
