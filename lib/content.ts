@@ -413,7 +413,7 @@ export const seminars = {
 
 export const comunicacionSeminar = {
   hero: {
-    programName: "Programa práctico de comunicación, persuasión y relaciones",
+    audience: "Para emprendedores que quieren comunicar mejor en redes, en ventas y en cada conversación",
     questions: [
       "¿Te cuesta expresarte?",
       "¿Te cuesta hablar frente a otras personas?",
@@ -448,7 +448,59 @@ export const comunicacionSeminar = {
   promise: {
     eyebrow: "La promesa",
     title: "Hacé que te elijan",
-    text: "Aprendé a leer a las personas, conectar en minutos y comunicar tus ideas para generar confianza, ventas y contenido que funcione.",
+    text: "Aprendé a leer a las personas, conectar en minutos e influir con ética. Son los fundamentos de la comunicación que nadie te enseñó y que definen si te eligen o no.",
+    extra:
+      "En la primera semana tenés una conversación distinta: hacés las preguntas correctas, escuchás de verdad y la otra persona termina contándote lo que realmente le importa.",
+  },
+  proof: {
+    eyebrow: "Mi trabajo",
+    title: "Lo que enseño, lo aplico todos los días",
+    text: "No te pido que me creas. Mirá cómo comunico.",
+    tiktokUser: "santiroccalote",
+    updated: "Seguidores al 27 de octubre de 2026.",
+    links: [
+      {
+        name: "TikTok",
+        href: "https://www.tiktok.com/@santiroccalote",
+        count: "71,1 mil",
+        unit: "seguidores",
+      },
+      {
+        name: "YouTube",
+        href: "https://www.youtube.com/@santiagoroccalote",
+        count: "",
+        unit: "",
+      },
+      {
+        name: "Instagram",
+        href: "https://www.instagram.com/santiagorocca/",
+        count: "49,8 mil",
+        unit: "seguidores",
+      },
+      {
+        name: "Instagram del podcast",
+        href: "https://www.instagram.com/viveparacontarlo_/",
+        count: "27,7 mil",
+        unit: "seguidores",
+      },
+      {
+        name: "Podcast en Spotify",
+        href: "https://open.spotify.com/show/4Q2IgSrlVU61LQzlX6hzMv",
+        count: "",
+        unit: "",
+      },
+    ],
+  },
+  whySell: {
+    eyebrow: "Mi historia con esto",
+    title: "¿Por qué vendo este seminario?",
+    paragraphs: [
+      "Antes me costaba hablar. Me trababa, dudaba, no sabía cómo conectar con la gente.",
+      "Estudié en la facultad de comunicación, hice seminarios, me pagué cursos de oratoria y consumí horas y horas de YouTube y podcasts sobre el tema. Cuanto más entendía cómo funciona la comunicación, más confianza ganaba para relacionarme.",
+      "Cuando empecé a construir mi marca personal en redes, empezó a pasar algo: la gente me escribía para pedirme que les enseñara a comunicar como comunico yo.",
+    ],
+    closing:
+      "Este seminario es esa respuesta. Lo que me llevó años y mucha prueba y error, ordenado en clases para que vos ganes esa confianza mucho más rápido.",
   },
   why: {
     eyebrow: "Por qué importa",
@@ -458,6 +510,39 @@ export const comunicacionSeminar = {
     quoteSource: "Los 7 hábitos de la gente altamente efectiva",
     paragraph:
       "Casi todo lo que conseguís en la vida pasa por otra persona. Una venta, un acuerdo, un vínculo, una idea que querés que prospere. Y sin embargo nadie nos enseña a comunicarnos: damos por sentado que hablar es lo mismo que comunicar. No lo es. La diferencia entre alguien que genera confianza en dos minutos y alguien que no la genera nunca no es carisma ni suerte — son habilidades concretas, y se aprenden.",
+  },
+  route: {
+    eyebrow: "El programa",
+    title: "La ruta, paso a paso",
+    intro:
+      "No es teoría suelta: cada tema te lleva al siguiente, en orden, y lo practicás en cada clase.",
+    steps: [
+      {
+        title: "Leer a las personas",
+        text: "Entender qué mueve a cada persona, escuchar de verdad y hacer las preguntas correctas.",
+      },
+      {
+        title: "Conectar sin forzar",
+        text: "Iniciar conversaciones y generar confianza en minutos, de forma natural.",
+      },
+      {
+        title: "Persuadir con ética",
+        text: "Influir en las decisiones de los demás sin manipular, entendiendo cómo funciona el ego y qué le importa a cada uno.",
+      },
+      {
+        title: "Armar un discurso que se recuerde",
+        text: "Ordenar tus ideas y contarlas con una estructura clara, para que lo que decís quede en la memoria.",
+      },
+      {
+        title: "Usar tu voz y tu cuerpo a favor",
+        text: "Oratoria práctica: transmitir seguridad, perder la vergüenza y reducir el miedo a hablar frente a otros.",
+      },
+      {
+        title: "Llevarlo a las ventas y al contenido",
+        text: "Explicar el valor de lo que ofrecés, resolver objeciones y comunicarte frente a cámara con mensajes que captan la atención.",
+      },
+    ],
+    note: "Cada clase trae material de archivo y ejercicios prácticos. En el plan completo, además, devolución personalizada sobre lo que hacés.",
   },
   includes: {
     eyebrow: "Contenido",
@@ -537,39 +622,49 @@ export const comunicacionSeminar = {
       },
       {
         q: "¿Hay garantía?",
-        a: "Sí, tenés 10 días de garantía.",
+        a: "Sí. El plan Seminario + en vivo tiene la Garantía Doble Apuesta: hacés las primeras 3 clases y sus ejercicios, y si no sentís que ganaste confianza y que te relacionás mejor, te devuelvo el 100% de tu dinero y además te quedás en la comunidad, gratis.",
       },
     ],
   },
   pricing: {
     eyebrow: "Inversión",
     title: "Elegí tu plan",
-    features: [
-      "Clases grabadas",
-      "Material de archivo",
-      "Ejercicios",
-      "Devolución personalizada",
-      "Clases en vivo, una por semana",
-      "Comunidad privada de WhatsApp",
-    ],
+    launch: {
+      badge: "Precio de lanzamiento por tiempo limitado",
+      text: "Estoy arrancando el programa y doy una clase en vivo por semana. Mientras lo completo, entrás a este precio. Cuando esté terminado, el precio sube, y quien ya entró conserva todo lo que se sume después.",
+    },
     plans: [
       {
         name: "Seminario grabado",
         price: "$80.000",
-        included: [true, true, true, false, false, false],
+        items: ["Clases grabadas", "Material de archivo", "Ejercicios"],
         highlight: false,
         payLink: "https://pay.hotmart.com/L107326163T?off=yxlzcbwe",
       },
       {
         name: "Seminario + en vivo",
         price: "$250.000",
-        included: [true, true, true, true, true, true],
+        items: [
+          "Todo lo del plan grabado",
+          "Clases en vivo, una por semana",
+          "Devolución personalizada sobre tus ejercicios: qué hacés bien y qué mejorar",
+          "Comunidad privada de WhatsApp: practicás con otros alumnos, te enterás de cada clase nueva y recibís tips y recursos todas las semanas",
+          "Garantía Doble Apuesta",
+        ],
         highlight: true,
         payLink: "https://pay.hotmart.com/L107326163T?off=85kyksiq",
       },
     ],
     payLabel: "Apretá acá para pagar",
-    assurances: ["3 y 6 cuotas", "10 días de garantía"],
+    assurances: ["3 y 6 cuotas"],
+    guarantee: {
+      title: "Garantía Doble Apuesta",
+      paragraphs: [
+        "Hacé las primeras 3 clases y sus ejercicios. Si no sentís que ganaste confianza y que te relacionás mejor, te devuelvo el 100% de tu dinero. Y además te quedás en la comunidad, gratis.",
+        "Apuesto doble porque sé lo que pasa cuando empezás a aplicar esto.",
+      ],
+      note: "Válida para el plan Seminario + en vivo.",
+    },
     cta: {
       title: "También podés anotarte por WhatsApp",
       message: "Hola! Quiero anotarme al seminario de Comunicación.",

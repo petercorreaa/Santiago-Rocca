@@ -1,7 +1,8 @@
-import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, X, Plus, CreditCard, ShieldCheck, Mic, Handshake, Lightbulb, Video } from "lucide-react";
+import { PlayCircle, Library, Wrench, Users, Infinity as InfinityIcon, Check, Plus, CreditCard, ShieldCheck, Mic, Handshake, Lightbulb, Video, ArrowUpRight } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
-import { comunicacionSeminar as seminar, whatsappContact } from "@/lib/content";
+import { TikTokProfileEmbed } from "@/components/shared/TikTokProfileEmbed";
+import { comunicacionSeminar as seminar, whatsappContact, podcast } from "@/lib/content";
 
 export const metadata = {
   title: "Comunicación — Seminarios — Santiago Rocca",
@@ -32,7 +33,7 @@ export default function SeminarioComunicacionPage() {
           <Reveal className="max-w-3xl">
             <p className="label flex items-center gap-3 text-accent">
               <span className="inline-block h-px w-8 bg-accent" />
-              {seminar.hero.programName}
+              {seminar.hero.audience}
             </p>
             <h1 className="mt-6 flex flex-col gap-4 font-display text-[clamp(2.25rem,5vw,4.25rem)] font-extrabold uppercase leading-[0.98] tracking-hero md:gap-6">
               {seminar.hero.questions.map((question) => (
@@ -104,6 +105,9 @@ export default function SeminarioComunicacionPage() {
             <p className="mx-auto mt-8 max-w-2xl text-lg font-semibold leading-relaxed text-ink/80 md:text-2xl">
               {seminar.promise.text}
             </p>
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-ink/70 md:text-lg">
+              {seminar.promise.extra}
+            </p>
           </Reveal>
         </div>
       </section>
@@ -135,8 +139,49 @@ export default function SeminarioComunicacionPage() {
         </Reveal>
       </SectionWrapper>
 
-      {/* ─── 3 · QUÉ INCLUYE ─── */}
+      {/* ─── LA RUTA ─── */}
       <SectionWrapper variant="dark">
+        <Reveal className="mb-12 max-w-2xl">
+          <p className="label flex items-center gap-3 text-accent">
+            <span className="inline-block h-px w-8 bg-accent" />
+            {seminar.route.eyebrow}
+          </p>
+          <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight">
+            {seminar.route.title}
+          </h2>
+          <div className="mt-3 h-1 w-10 bg-brand" />
+          <p className="mt-5 text-base leading-relaxed text-white/60 md:text-lg">
+            {seminar.route.intro}
+          </p>
+        </Reveal>
+
+        <div className="max-w-4xl border-t border-white/10">
+          {seminar.route.steps.map((step, i) => (
+            <Reveal key={step.title} delay={i * 0.06}>
+              <div className="flex gap-6 border-b border-white/10 py-7 md:gap-10">
+                <span className="w-16 shrink-0 font-display text-5xl font-extrabold leading-none text-accent md:w-24 md:text-6xl">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="font-display text-2xl font-bold uppercase tracking-tight md:text-3xl">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 max-w-2xl text-base leading-relaxed text-white/60">{step.text}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal delay={0.1} className="mt-8">
+          <p className="max-w-3xl border-l-4 border-accent pl-6 text-base font-semibold leading-relaxed text-white/80 md:text-lg">
+            {seminar.route.note}
+          </p>
+        </Reveal>
+      </SectionWrapper>
+
+      {/* ─── 3 · QUÉ INCLUYE ─── */}
+      <SectionWrapper variant="dark" className="border-t border-white/10">
         <Reveal className="mb-12 max-w-2xl">
           <p className="label flex items-center gap-3 text-accent">
             <span className="inline-block h-px w-8 bg-accent" />
@@ -197,6 +242,109 @@ export default function SeminarioComunicacionPage() {
         </Reveal>
       </SectionWrapper>
 
+      {/* ─── LO QUE ENSEÑO, LO APLICO ─── */}
+      <SectionWrapper variant="light">
+        <Reveal className="mb-12 max-w-2xl">
+          <p className="label flex items-center gap-3 text-brand">
+            <span className="inline-block h-px w-8 bg-accent" />
+            {seminar.proof.eyebrow}
+          </p>
+          <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight text-ink">
+            {seminar.proof.title}
+          </h2>
+          <div className="mt-3 h-1 w-10 bg-brand" />
+          <p className="mt-5 text-base font-semibold leading-relaxed text-ink/70 md:text-lg">
+            {seminar.proof.text}
+          </p>
+        </Reveal>
+
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+          {seminar.proof.links.map((link, i) => (
+            <Reveal key={link.name} delay={i * 0.08}>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-full flex-col justify-between gap-8 rounded-sm border border-ink/10 bg-paper p-6 transition-all duration-300 hover:border-accent hover:bg-ink hover:text-white"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <p className="label text-brand transition-colors group-hover:text-accent">{link.name}</p>
+                  <ArrowUpRight size={20} strokeWidth={1.75} className="shrink-0 text-ink/30 transition-colors group-hover:text-accent" />
+                </div>
+                {link.count ? (
+                  <div>
+                    <p className="font-display text-4xl font-extrabold uppercase leading-none tracking-tight">
+                      {link.count}
+                    </p>
+                    <p className="mt-2 text-sm text-ink/50 transition-colors group-hover:text-white/60">
+                      {link.unit}
+                    </p>
+                  </div>
+                ) : (
+                  <p className="font-display text-2xl font-bold uppercase tracking-tight">Ver perfil</p>
+                )}
+              </a>
+            </Reveal>
+          ))}
+        </div>
+
+        <p className="mt-4 text-xs text-ink/40">{seminar.proof.updated}</p>
+
+        <div className="mt-12">
+          <TikTokProfileEmbed username={seminar.proof.tiktokUser} label="Mis últimos videos en TikTok" />
+        </div>
+
+        <p className="label mb-5 mt-12 text-brand">Del podcast, con mis invitados</p>
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          {podcast.featuredVideos.map((video, i) => (
+            <Reveal key={video.url} delay={i * 0.08}>
+              <a
+                href={video.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative block aspect-video overflow-hidden rounded-sm border border-ink/10 transition-colors duration-300 hover:border-[#FF0000]"
+              >
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  style={{ backgroundImage: `url('${video.image}')` }}
+                />
+                <span className="absolute left-1/2 top-1/2 flex h-12 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-xl bg-[#FF0000] text-white opacity-90 transition-all duration-300 group-hover:scale-110 group-hover:opacity-100">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </span>
+              </a>
+            </Reveal>
+          ))}
+        </div>
+      </SectionWrapper>
+
+      {/* ─── POR QUÉ VENDO ESTE SEMINARIO ─── */}
+      <SectionWrapper variant="dark">
+        <Reveal className="mx-auto max-w-3xl">
+          <p className="label flex items-center gap-3 text-accent">
+            <span className="inline-block h-px w-8 bg-accent" />
+            {seminar.whySell.eyebrow}
+          </p>
+          <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight">
+            {seminar.whySell.title}
+          </h2>
+          <div className="mt-3 h-1 w-10 bg-brand" />
+          <div className="mt-8 flex flex-col gap-5">
+            {seminar.whySell.paragraphs.map((p) => (
+              <p key={p} className="text-base leading-relaxed text-white/70 md:text-lg">
+                {p}
+              </p>
+            ))}
+          </div>
+          <div className="mt-8 border-l-4 border-accent pl-7">
+            <p className="text-base font-semibold leading-relaxed text-white/90 md:text-lg">
+              {seminar.whySell.closing}
+            </p>
+          </div>
+        </Reveal>
+      </SectionWrapper>
+
       {/* ─── 4 · INVERSIÓN ─── */}
       <SectionWrapper variant="light">
         <Reveal className="mb-12 max-w-2xl">
@@ -208,6 +356,17 @@ export default function SeminarioComunicacionPage() {
             {seminar.pricing.title}
           </h2>
           <div className="mt-3 h-1 w-10 bg-brand" />
+        </Reveal>
+
+        <Reveal className="mb-8">
+          <div className="rounded-sm border border-accent/40 bg-accent/10 p-6 md:p-8">
+            <span className="inline-flex items-center rounded-sm bg-accent px-3 py-1 text-xs font-bold uppercase tracking-label text-ink">
+              {seminar.pricing.launch.badge}
+            </span>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink/80 md:text-lg">
+              {seminar.pricing.launch.text}
+            </p>
+          </div>
         </Reveal>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -231,24 +390,12 @@ export default function SeminarioComunicacionPage() {
                 </p>
 
                 <ul className="mt-8 flex flex-col gap-4">
-                  {seminar.pricing.features.map((feature, i) => {
-                    const included = plan.included[i];
-                    return (
-                      <li
-                        key={feature}
-                        className={`flex items-center gap-3 text-sm md:text-base ${
-                          included ? "text-ink/80" : "text-ink/35 line-through"
-                        }`}
-                      >
-                        {included ? (
-                          <Check size={18} strokeWidth={2.5} className="shrink-0 text-brand" />
-                        ) : (
-                          <X size={18} strokeWidth={2.5} className="shrink-0 text-ink/25" />
-                        )}
-                        {feature}
-                      </li>
-                    );
-                  })}
+                  {plan.items.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-ink/80 md:text-base">
+                      <Check size={18} strokeWidth={2.5} className="mt-0.5 shrink-0 text-brand" />
+                      {item}
+                    </li>
+                  ))}
                 </ul>
 
                 <div className="mt-auto pt-8">
@@ -267,18 +414,36 @@ export default function SeminarioComunicacionPage() {
         </div>
 
         <Reveal delay={0.15} className="mt-6">
-          <div className="grid grid-cols-1 divide-y divide-white/15 rounded-sm border border-accent/40 bg-ink md:grid-cols-2 md:divide-x md:divide-y-0">
-            {seminar.pricing.assurances.map((text, i) => {
-              const Icon = i === 0 ? CreditCard : ShieldCheck;
-              return (
-                <div key={text} className="flex items-center justify-center gap-4 px-6 py-6 md:py-8">
-                  <Icon size={30} strokeWidth={1.75} className="shrink-0 text-accent" />
-                  <p className="font-display text-xl font-extrabold uppercase tracking-tight text-white md:text-3xl">
-                    {text}
+          <div className="rounded-sm border border-accent/40 bg-ink">
+            {seminar.pricing.assurances.map((text) => (
+              <div key={text} className="flex items-center justify-center gap-4 px-6 py-6 md:py-8">
+                <CreditCard size={30} strokeWidth={1.75} className="shrink-0 text-accent" />
+                <p className="font-display text-xl font-extrabold uppercase tracking-tight text-white md:text-3xl">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.18} className="mt-6">
+          <div className="flex flex-col gap-5 rounded-sm border border-brand/40 bg-brand/[0.04] p-8 md:flex-row md:items-start md:gap-8 md:p-10">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-sm bg-brand text-white">
+              <ShieldCheck size={28} strokeWidth={1.75} />
+            </span>
+            <div>
+              <h3 className="font-display text-3xl font-extrabold uppercase tracking-tight text-ink md:text-4xl">
+                {seminar.pricing.guarantee.title}
+              </h3>
+              <div className="mt-4 flex flex-col gap-3">
+                {seminar.pricing.guarantee.paragraphs.map((p) => (
+                  <p key={p} className="max-w-3xl text-base leading-relaxed text-ink/80 md:text-lg">
+                    {p}
                   </p>
-                </div>
-              );
-            })}
+                ))}
+              </div>
+              <p className="mt-4 text-sm font-semibold text-brand">{seminar.pricing.guarantee.note}</p>
+            </div>
           </div>
         </Reveal>
 
