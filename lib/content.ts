@@ -413,12 +413,7 @@ export const seminars = {
 
 export const comunicacionSeminar = {
   hero: {
-    audience: "Para emprendedores que quieren comunicar mejor en redes, en ventas y en cada conversación",
-    questions: [
-      "¿Te cuesta expresarte?",
-      "¿Te cuesta hablar frente a otras personas?",
-      "¿Te cuesta transmitir el verdadero valor de lo que hacés?",
-    ],
+    headline: ["No te eligen por lo que sabés.", "Te eligen por cómo lo comunicás."],
     subtitle:
       "Aprendé herramientas prácticas de comunicación, oratoria, persuasión y relaciones humanas para aplicarlas en tu vida personal y profesional.",
     support: ["Clases grabadas", "Material de archivo", "Ejercicios", "Comunidad privada"],

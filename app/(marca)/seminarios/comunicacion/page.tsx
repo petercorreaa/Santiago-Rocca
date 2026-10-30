@@ -16,7 +16,7 @@ export default function SeminarioComunicacionPage() {
   return (
     <>
       {/* ─── 1 · HERO ─── */}
-      <section className="relative flex min-h-[70vh] w-full items-center overflow-hidden bg-ink text-white">
+      <section className="relative flex min-h-[56vh] w-full items-center overflow-hidden bg-ink text-white">
         <div
           aria-hidden
           className="absolute inset-0 bg-cover bg-[center_15%]"
@@ -29,24 +29,17 @@ export default function SeminarioComunicacionPage() {
         <div aria-hidden className="pointer-events-none absolute right-0 bottom-0 h-[30rem] w-[30rem] rounded-full bg-accent/6 blur-3xl" />
         <div aria-hidden className="absolute left-0 top-0 h-full w-1 bg-brand" />
 
-        <div className="relative z-10 mx-auto w-full max-w-content px-6 py-28 md:px-8">
-          <Reveal className="max-w-3xl">
-            <p className="label flex items-center gap-3 text-accent">
-              <span className="inline-block h-px w-8 bg-accent" />
-              {seminar.hero.audience}
-            </p>
-            <h1 className="mt-6 flex flex-col gap-4 font-display text-[clamp(2.25rem,5vw,4.25rem)] font-extrabold uppercase leading-[0.98] tracking-hero md:gap-6">
-              {seminar.hero.questions.map((question) => (
-                <span key={question} className="block">
-                  {question}
-                </span>
-              ))}
+        <div className="relative z-10 mx-auto w-full max-w-content px-6 pb-16 pt-32 md:px-8 md:pb-20 md:pt-36">
+          <Reveal className="max-w-4xl">
+            <h1 className="flex flex-col gap-2 font-display text-[clamp(2.5rem,6.5vw,5.5rem)] font-extrabold uppercase leading-[0.95] tracking-hero md:gap-3">
+              <span className="block">{seminar.hero.headline[0]}</span>
+              <span className="block text-accent">{seminar.hero.headline[1]}</span>
             </h1>
             <div className="mt-6 h-1 w-20 bg-accent" />
-            <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/60 md:text-xl">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl">
               {seminar.hero.subtitle}
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6">
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 pt-6">
               {seminar.hero.support.map((item, i) => (
                 <span key={item} className="flex items-center gap-6 text-xs font-semibold uppercase tracking-label text-white/50">
                   {i > 0 && <span className="hidden h-1 w-1 rounded-full bg-accent/60 sm:inline-block" />}
