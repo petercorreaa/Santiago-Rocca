@@ -415,7 +415,7 @@ export const comunicacionSeminar = {
   hero: {
     headline: ["No te eligen por lo que sabés.", "Te eligen por cómo lo comunicás."],
     subtitle:
-      "Aprendé herramientas prácticas de comunicación, oratoria, persuasión y relaciones humanas para aplicarlas en tu vida personal y profesional.",
+      "Tenés valor para aportar, pero pasás desapercibido. Aprendé a leer a las personas, conectar y comunicar lo que valés para abrir oportunidades: clientes, ascensos y propuestas.",
     support: ["Clases grabadas", "Material de archivo", "Ejercicios", "Comunidad privada"],
   },
   situations: {
@@ -446,6 +446,38 @@ export const comunicacionSeminar = {
     text: "Aprendé a leer a las personas, conectar en minutos e influir con ética. Son los fundamentos de la comunicación que nadie te enseñó y que definen si te eligen o no.",
     extra:
       "En la primera semana tenés una conversación distinta: hacés las preguntas correctas, escuchás de verdad y la otra persona termina contándote lo que realmente le importa.",
+  },
+  beforeAfter: {
+    eyebrow: "Antes y después",
+    title: "Qué cambia al terminar",
+    beforeLabel: "Hoy",
+    afterLabel: "Al terminar el programa",
+    rows: [
+      {
+        before: "Hablás y no sabés cómo se está tomando tu mensaje la otra persona",
+        after: "Leés su cuerpo, su tono y sus palabras, y sabés en cada momento cómo le está llegando lo que decís",
+      },
+      {
+        before: "No captás el estado emocional del otro y le hablás igual a todos",
+        after: "Detectás cómo se siente, lo espejás y generás rapport para conectar",
+      },
+      {
+        before: "No sabés bien cómo tratar a las personas, y las conversaciones se cortan o se enfrían",
+        after: "Hacés buenas preguntas, escuchás de verdad y construís mejores relaciones",
+      },
+      {
+        before: "Te escuchan, pero no te creen ni te recuerdan",
+        after: "Hablás con autoridad, credibilidad y emoción",
+      },
+      {
+        before: "Te trabás frente a cámara o frente a otros",
+        after: "Hablás con estructura, y tu cuerpo y tu voz te respaldan",
+      },
+      {
+        before: "Pasás desapercibido aunque tengas mucho para aportar",
+        after: "Comunicás lo que valés, la gente lo nota y te elige",
+      },
+    ],
   },
   proof: {
     eyebrow: "Mi trabajo",
@@ -631,7 +663,6 @@ export const comunicacionSeminar = {
         text: "Entrás una vez y es tuyo para siempre. Cada clase nueva, cada recurso y cada mejora que se sume al programa ya está incluido, sin pagar de nuevo. El programa que comprás hoy va a ser más completo dentro de seis meses, y más completo todavía dentro de un año. Y vos vas a tener acceso a todo.",
       },
     ] as { title: string; text: string; bullets?: string[] }[],
-    programLink: "https://docs.google.com/document/d/1pISaksjJ3d0CV9hEbLIrEtQRdqsUQ7e4czuU-BASEaI/edit?tab=t.0",
   },
   closing:
     "La idea no es que termines sabiendo más teoría. Es que empieces a observar mejor, preguntar mejor, expresarte mejor, y a entender qué hace que una comunicación genere confianza, atención, emoción e influencia.",
@@ -641,7 +672,7 @@ export const comunicacionSeminar = {
     items: [
       {
         q: "¿Para quién es este seminario? ¿Hace falta experiencia previa?",
-        a: "Es para cualquiera que quiera comunicar mejor: expresarse con más seguridad, perder la vergüenza, persuadir, ganar amigos, vender más, crear mejor contenido y contar lo que hace, su trabajo y su vida con más impacto. No hace falta experiencia previa.",
+        a: "Para personas que tienen valor para aportar, pero pasan desapercibidas: en el trabajo, en su negocio, en redes o con la gente. No hace falta experiencia previa.",
       },
       {
         q: "¿Me sirve si quiero vender o crear contenido, no solo hablar mejor?",

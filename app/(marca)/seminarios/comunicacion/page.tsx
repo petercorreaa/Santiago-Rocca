@@ -105,6 +105,43 @@ export default function SeminarioComunicacionPage() {
         </div>
       </section>
 
+      {/* ─── ANTES Y DESPUÉS ─── */}
+      <SectionWrapper variant="dark">
+        <Reveal className="mb-12 max-w-2xl">
+          <p className="label flex items-center gap-3 text-accent">
+            <span className="inline-block h-px w-8 bg-accent" />
+            {seminar.beforeAfter.eyebrow}
+          </p>
+          <h2 className="mt-5 font-display text-[clamp(2.25rem,4.5vw,3.5rem)] font-extrabold uppercase leading-tight tracking-tight">
+            {seminar.beforeAfter.title}
+          </h2>
+          <div className="mt-3 h-1 w-10 bg-brand" />
+        </Reveal>
+
+        <div className="max-w-5xl">
+          <div className="hidden grid-cols-2 gap-4 pb-4 md:grid">
+            <p className="label text-white/40">{seminar.beforeAfter.beforeLabel}</p>
+            <p className="label text-accent">{seminar.beforeAfter.afterLabel}</p>
+          </div>
+          <div className="border-t border-white/10">
+            {seminar.beforeAfter.rows.map((row, i) => (
+              <Reveal key={row.before} delay={i * 0.05}>
+                <div className="grid grid-cols-1 gap-3 border-b border-white/10 py-6 md:grid-cols-2 md:gap-8">
+                  <div>
+                    <p className="label mb-1 text-white/40 md:hidden">{seminar.beforeAfter.beforeLabel}</p>
+                    <p className="text-base leading-relaxed text-white/50">{row.before}</p>
+                  </div>
+                  <div className="border-l-2 border-accent pl-4">
+                    <p className="label mb-1 text-accent md:hidden">{seminar.beforeAfter.afterLabel}</p>
+                    <p className="text-base font-semibold leading-relaxed text-white">{row.after}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </SectionWrapper>
+
       {/* ─── 2 · POR QUÉ LA COMUNICACIÓN IMPORTA ─── */}
       <SectionWrapper variant="light">
         <Reveal className="mx-auto max-w-4xl">
@@ -222,17 +259,6 @@ export default function SeminarioComunicacionPage() {
             );
           })}
         </div>
-
-        <Reveal delay={0.15} className="mt-10">
-          <a
-            href={seminar.includes.programLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-secondary-dark"
-          >
-            Ver el programa completo acá
-          </a>
-        </Reveal>
       </SectionWrapper>
 
       {/* ─── LO QUE ENSEÑO, LO APLICO ─── */}
