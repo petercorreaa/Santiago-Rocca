@@ -118,22 +118,22 @@ export default function SeminarioComunicacionPage() {
           <div className="mt-3 h-1 w-10 bg-brand" />
         </Reveal>
 
-        <div className="max-w-5xl">
-          <div className="hidden grid-cols-2 gap-4 pb-4 md:grid">
-            <p className="label text-white/40">{seminar.beforeAfter.beforeLabel}</p>
-            <p className="label text-accent">{seminar.beforeAfter.afterLabel}</p>
+        <div className="max-w-6xl">
+          <div className="hidden grid-cols-2 gap-10 pb-5 md:grid">
+            <p className="font-display text-xl font-bold uppercase tracking-wide text-white/60">{seminar.beforeAfter.beforeLabel}</p>
+            <p className="font-display text-xl font-bold uppercase tracking-wide text-accent">{seminar.beforeAfter.afterLabel}</p>
           </div>
-          <div className="border-t border-white/10">
+          <div className="border-t border-white/20">
             {seminar.beforeAfter.rows.map((row, i) => (
               <Reveal key={row.before} delay={i * 0.05}>
-                <div className="grid grid-cols-1 gap-3 border-b border-white/10 py-6 md:grid-cols-2 md:gap-8">
+                <div className="grid grid-cols-1 gap-5 border-b border-white/20 py-8 md:grid-cols-2 md:gap-10 md:py-9">
                   <div>
-                    <p className="label mb-1 text-white/40 md:hidden">{seminar.beforeAfter.beforeLabel}</p>
-                    <p className="text-base leading-relaxed text-white/50">{row.before}</p>
+                    <p className="mb-2 font-display text-base font-bold uppercase tracking-wide text-white/60 md:hidden">{seminar.beforeAfter.beforeLabel}</p>
+                    <p className="text-lg leading-relaxed text-white/75 md:text-xl">{row.before}</p>
                   </div>
-                  <div className="border-l-2 border-accent pl-4">
-                    <p className="label mb-1 text-accent md:hidden">{seminar.beforeAfter.afterLabel}</p>
-                    <p className="text-base font-semibold leading-relaxed text-white">{row.after}</p>
+                  <div className="border-l-4 border-accent pl-5">
+                    <p className="mb-2 font-display text-base font-bold uppercase tracking-wide text-accent md:hidden">{seminar.beforeAfter.afterLabel}</p>
+                    <p className="text-lg font-semibold leading-relaxed text-white md:text-2xl">{row.after}</p>
                   </div>
                 </div>
               </Reveal>
