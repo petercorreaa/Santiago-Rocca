@@ -1,7 +1,16 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import { whatsappContact } from "@/lib/content";
 
-/** Botón flotante de WhatsApp, fijo en la esquina inferior derecha en todas las páginas. */
+/**
+ * Botón flotante de WhatsApp, fijo en la esquina inferior derecha en todas las páginas.
+ * En la mentoría de Marca Personal se oculta: ahí el contacto pasa primero por el formulario.
+ */
 export function WhatsAppButton() {
+  const pathname = usePathname();
+  if (pathname.startsWith("/marca-personal")) return null;
+
   return (
     <a
       href={whatsappContact.href}

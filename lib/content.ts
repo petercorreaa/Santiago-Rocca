@@ -17,6 +17,7 @@ export const site = {
 export type NavLink = { label: string; href: string };
 
 export const navLinks: NavLink[] = [
+  { label: "Marca Personal", href: "/marca-personal" },
   { label: "Vive para Contarlo", href: "/vive-para-contarlo" },
   { label: "Libro", href: "/libro" },
   { label: "Seminarios", href: "/seminarios" },
@@ -409,6 +410,297 @@ export const seminars = {
       href: null,
     },
   ],
+};
+
+// ---------------------------------------------------------------------------
+// Mentoría de Marca Personal (landing de venta, sin precio)
+// ---------------------------------------------------------------------------
+
+export const marcaPersonal = {
+  // Formulario de Google que filtra las consultas; los calificados agendan la llamada al final.
+  applyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdFfkGX4_WK0Vp7cEGcATmFQkyTGBW8QhT_SNra98C-ehvwVQ/viewform",
+  hero: {
+    eyebrow: "Mentoría de Marca Personal",
+    headline: ["Aprendé a comunicar frente a cámara.", "Convertí tus redes en una fuente de consultas."],
+    subtitle:
+      "Para emprendedores a los que les cuesta aparecer en redes. Salís con seguridad para comunicar y con una estrategia de contenido que te trae consultas. Todos los días trabajás con nosotros.",
+    support: ["1 o 2 meses", "Seguimiento diario", "Trabajo con equipo", "Estrategia de contenido"],
+    cta: "Aplicar a la mentoría",
+  },
+  problem: {
+    eyebrow: "El problema",
+    title: "Publicás, pero no te diferenciás de tu competencia",
+    pains: [
+      {
+        title: "Te cuesta ponerte frente a cámara",
+        text: "Te trabás, te da vergüenza o grabás diez veces y no publicás ninguno.",
+      },
+      {
+        title: "No sabés qué decir ni cómo decirlo",
+        text: "Tenés mucho para contar sobre lo que hacés, pero no sabés por dónde empezar ni cómo hacerlo interesante.",
+      },
+      {
+        title: "Todavía no ves el beneficio de aparecer",
+        text: "Publicás y no pasa nada: pocas consultas, pocos contactos y cero ventas que vengan de las redes.",
+      },
+    ],
+    note: "El problema no es tu producto: es cómo lo comunicás.",
+  },
+  audience: {
+    eyebrow: "Para quién es",
+    title: "Es para vos si sos emprendedor y querés que tus redes trabajen para tu negocio",
+    items: [
+      "Estás arrancando a crear contenido en redes, de cualquier rubro.",
+      "Ya facturás o todavía no, pero ya aparecés o querés aparecer en redes.",
+      "Querés mejorar tus redes, recibir más contactos y posicionarte mejor en tu rubro.",
+      "Sabés que tenés que aparecer, pero te cuesta: te trabás, te da vergüenza o publicás y no pasa nada.",
+    ],
+  },
+  differential: {
+    eyebrow: "El diferencial",
+    title: "Acá aprendés a comunicar",
+    text: "Otras mentorías te enseñan a hacer contenido. Acá aprendés a comunicar, y el contenido es la consecuencia.",
+    extra:
+      "Trabajamos para que comuniques con credibilidad, emoción y autoridad, y para que tu estilo propio te diferencie de tu competencia.",
+  },
+  how: {
+    eyebrow: "Cómo funciona",
+    title: "Trabajás con nosotros todos los días",
+    items: [
+      {
+        title: "1 o 2 meses",
+        text: "La duración depende de lo que requiera cada caso.",
+      },
+      {
+        title: "Compromiso diario",
+        text: "Todos los días hablamos para mejorar tu contenido y planificar la estrategia juntos.",
+      },
+      {
+        title: "Trabajo con equipo",
+        text: "Te damos ideas, estrategia y organización, y hacemos seguimiento de tu avance.",
+      },
+      {
+        title: "Qué trabajamos",
+        text: "Tu estrategia, tu oferta, a quién le vendés, tu contenido estratégico y tu comunicación.",
+      },
+    ],
+  },
+  outcome: {
+    eyebrow: "El resultado",
+    title: "Con qué salís",
+    items: [
+      "Una marca personal mejor posicionada en tu rubro.",
+      "Una forma de comunicar clara, segura y propia.",
+      "Una estrategia de contenido con intención: atraer, generar confianza y vender.",
+      "El hábito de publicar con constancia, sin trabarte.",
+    ],
+  },
+  method: {
+    eyebrow: "El método",
+    title: "Estrategia de marca personal",
+    intro:
+      "Una marca personal no se construye solamente publicando contenido. Se construye logrando que las personas correctas te descubran, entiendan qué hacés, confíen en vos y consideren comprar lo que ofrecés.",
+    pillars: [
+      "Nicho específico",
+      "Contenido con intención",
+      "Autoridad y confianza",
+      "Oferta que transforma",
+      "Comunidad y reputación",
+      "Ecosistema",
+    ],
+    stepsTitle: "La estrategia en 5 pasos",
+    steps: [
+      {
+        title: "Elegir un nicho",
+        text: "Un grupo concreto de personas con un problema concreto, que vea la solución como una inversión y tenga capacidad de pago.",
+      },
+      {
+        title: "Estrategia de contenido",
+        text: "Contenido con distintas intenciones según el nivel de conciencia de la audiencia. El objetivo: ser la primera persona que recuerdan cuando necesitan resolver ese problema.",
+      },
+      {
+        title: "Diseñar y validar la oferta",
+        text: "Llevar al cliente del punto A (problema) al punto B (resultado): promesa específica, metodología propia, plazo realista y menos riesgo percibido. Validar con lista de espera, preventa o primeras ventas.",
+      },
+      {
+        title: "Escalera de productos",
+        text: "Contenido gratuito, producto accesible, programa completo y acompañamiento personalizado. Cada nivel resuelve un problema más profundo.",
+      },
+      {
+        title: "Profesionalizar y sistematizar",
+        text: "Procesos para producir contenido, gestionar conversaciones, hacer seguimiento comercial, entregar y medir, para que la marca crezca sin que hagas todo vos.",
+      },
+    ],
+  },
+  avatar: {
+    eyebrow: "El punto de partida",
+    title: "Avatar + producto",
+    intro:
+      "Antes de pensar en videos o tendencias, definís a quién ayudás y qué transformación ofrecés. Del avatar necesitás conocer:",
+    items: [
+      { title: "Dolores", text: "Problemas, frustraciones, errores y consecuencias de no resolverlos." },
+      { title: "Deseos", text: "El resultado que quiere y la identidad que aspira a construir." },
+      { title: "Preguntas", text: "Dudas que repite y temas sobre los que necesita orientación." },
+      {
+        title: "Objeciones",
+        text: "Por qué posterga: “no tengo tiempo”, “es caro”, “no sé si funciona para mí”.",
+      },
+      { title: "Confianza y desconfianza", text: "Qué le da credibilidad y qué tendría que ver para creerte." },
+      { title: "Lenguaje", text: "Las palabras que usa para describir su problema." },
+    ],
+    connection: "AVATAR + PROBLEMA + RESULTADO + SOLUCIÓN",
+    connectionNote: "Todo el contenido se relaciona con esa promesa.",
+  },
+  system: {
+    eyebrow: "El sistema",
+    title: "Viral, nicho y venta",
+    types: [
+      {
+        name: "Viral",
+        goal: "Que te descubran",
+        text: "Tus temas con un ángulo amplio: historias conocidas, referentes, humor, contrastes, temas actuales. Ampliar el interés sin perder tu territorio.",
+        question: "¿Alguien que no me conoce lo entendería, lo compartiría y descubriría de qué hablo?",
+      },
+      {
+        name: "Nicho",
+        goal: "Que te valoren y confíen",
+        text: "Dolores, preguntas, errores y obstáculos concretos del avatar. Valor real, no un aviso disfrazado.",
+        question: "¿La persona que quiero ayudar puede aplicar algo concreto después de verlo?",
+      },
+      {
+        name: "Venta",
+        goal: "Que elijan tu solución",
+        text: "Problema reconocido, resultado deseado y tu oferta, con pruebas, objeciones respondidas y para quién es y para quién no.",
+        question: "¿Queda claro por qué considerar mi oferta y qué hacer si le interesa?",
+      },
+    ],
+    controlLabel: "Pregunta de control",
+    awareness: {
+      title: "Según el nivel de conciencia",
+      stages: [
+        {
+          name: "Atracción",
+          goal: "Llegar a personas nuevas",
+          example: "“3 errores que hacen que nadie te escuche”",
+        },
+        {
+          name: "Educación",
+          goal: "Explicar el problema",
+          example: "“Por qué saber mucho no significa comunicar bien”",
+        },
+        {
+          name: "Autoridad",
+          goal: "Demostrar conocimiento",
+          example: "“Cómo aplicar los principios de Cialdini al hablar”",
+        },
+        {
+          name: "Confianza",
+          goal: "Reducir dudas",
+          example: "Ejercicios, experiencias y resultados reales de alumnos",
+        },
+        {
+          name: "Conversión",
+          goal: "Presentar tu solución",
+          example: "Clase gratuita y presentación de la oferta",
+        },
+      ],
+    },
+    note: "Viralizar no es lo mismo que construir confianza. Podés tener millones de vistas y no vender si tu contenido nunca preparó a las personas para entender el valor de tu oferta.",
+  },
+  content: {
+    eyebrow: "El contenido",
+    title: "Cómo lo contás y cómo lo construís",
+    formsTitle: "Las cuatro formas de contarlo",
+    formsIntro:
+      "Viral, nicho y venta definen la función. Estos cuatro enfoques definen cómo lo contás, y se combinan:",
+    forms: [
+      { title: "Inspiración", text: "Historias, cambios de mentalidad y ejemplos que impulsan a actuar." },
+      { title: "Educación", text: "Explicar una idea, enseñar un método, desarrollar una habilidad." },
+      { title: "Información", text: "Datos, novedades, aprendizajes y contexto para decidir." },
+      { title: "Entretenimiento", text: "Humor, storytelling, desafíos y situaciones reconocibles." },
+    ],
+    fuelTitle: "El combustible: lo que le pasa a tu audiencia",
+    fuelIntro: "Las ideas salen de escuchar: comentarios, mensajes, llamadas y preguntas antes de comprar.",
+    fuel: [
+      {
+        title: "Dolores",
+        text: "Viral muestra la situación, nicho explica por qué pasa, venta muestra cómo lo resolvés.",
+      },
+      {
+        title: "Preguntas",
+        text: "Las amplias abren viral; los procedimientos sirven para nicho; las que son sobre tu oferta, son venta.",
+      },
+      { title: "Objeciones", text: "Revelan qué información falta para decidir." },
+      {
+        title: "Desconfianza",
+        text: "Se responde con consistencia, procesos, límites reconocidos y testimonios reales.",
+      },
+    ],
+    fuelNote:
+      "Nunca inventes resultados, cifras ni testimonios. Una demostración específica y auténtica vale más que una promesa espectacular.",
+    journeyTitle: "Del descubrimiento a la compra",
+    journeyIntro: "Tres preguntas que tu contenido responde:",
+    journey: [
+      "¿Quién sos y por qué debería prestarte atención?",
+      "¿Sabés de lo que hablás y podés ayudarme?",
+      "¿Qué ofrecés y por qué debería elegirlo?",
+    ],
+    journeyText:
+      "Entre las tres etapas tiene que haber continuidad: quien llega por un viral encuentra profundidad en tu perfil, y quien está listo para comprar encuentra el paso siguiente claro y fácil.",
+    coherenceTitle: "Coherencia",
+    coherenceText:
+      "Tu posicionamiento crece cuando la audiencia reconoce un hilo conductor entre lo que publicás y lo que vendés. La estrategia no se mide solo por seguidores: el viral atrae descubrimiento relevante, el de nicho genera interés y el de venta genera consultas.",
+  },
+  communication: {
+    eyebrow: "El sistema de comunicación",
+    title: "El contenido funciona cuando la comunicación funciona",
+    intro:
+      "Este es el sistema con el que trabajás para comunicar con credibilidad, emoción y autoridad.",
+    items: [
+      {
+        title: "Leer a las personas y conectar",
+        text: "Aprendés a leer a las personas, conectar en minutos y comunicar tus ideas para generar confianza, ventas y contenido que funcione. El núcleo son las relaciones, la influencia y la persuasión.",
+      },
+      {
+        title: "Influencia y persuasión",
+        text: "Los principios de Cialdini aplicados a cómo hablás y a cómo construís tu contenido y tu oferta.",
+      },
+      {
+        title: "Estructura de discurso",
+        text: "Tres formas de ordenar lo que decís:",
+        bullets: [
+          "Storytelling con el método de las parábolas: una historia que deja una idea.",
+          "La estructura de la sardina (Fer Miralles).",
+          "El método simple (Alex Dey).",
+        ],
+      },
+      {
+        title: "Persuasión emocional: PAS",
+        text: "Problema, Agitación, Solución. La estructura para que tu contenido de venta conecte con lo que la persona ya siente.",
+      },
+      {
+        title: "Ley de la Práctica",
+        text: "Basada en Brian Tracy: cuanto más practicás, mejor te sale. Por eso el seguimiento es diario: la comunicación mejora haciendo, con devoluciones constantes.",
+      },
+    ] as { title: string; text: string; bullets?: string[] }[],
+    pillars: [
+      { title: "Credibilidad", text: "Decir lo que hacés y mostrar pruebas reales." },
+      { title: "Emoción", text: "Historias y estructuras que conectan con lo que siente tu audiencia." },
+      { title: "Autoridad", text: "Criterio, claridad y una forma de comunicar que es solo tuya." },
+    ],
+  },
+  proof: {
+    eyebrow: "Mi trabajo",
+    title: "Lo que enseño, lo aplico todos los días",
+    text: "No te pido que me creas. Mirá cómo comunico y cómo construí mi marca en redes.",
+  },
+  closing: {
+    quote:
+      "No publiques solo para que te vean. Publicá para que las personas correctas te descubran, entiendan qué hacés, confíen en vos y sepan cómo dar el siguiente paso.",
+    title: "¿Querés aplicar?",
+    text: "Completá un formulario de 5 minutos. Si hay buen encaje, te escribo por WhatsApp y coordinamos una llamada.",
+    cta: "Aplicar a la mentoría",
+  },
 };
 
 export const comunicacionSeminar = {
