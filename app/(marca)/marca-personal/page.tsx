@@ -4,7 +4,7 @@ import { Reveal } from "@/components/shared/Reveal";
 import { marcaPersonal as mp, comunicacionSeminar } from "@/lib/content";
 
 export const metadata = {
-  title: "Mentoría de Marca Personal — Santiago Rocca",
+  title: "Diferenciá tu marca personal — Santiago Rocca",
   description: mp.hero.subtitle,
 };
 
@@ -120,6 +120,16 @@ export default function MarcaPersonalPage() {
           <p className="max-w-3xl border-l-4 border-brand pl-6 font-display text-2xl font-extrabold uppercase leading-tight tracking-tight text-ink md:text-3xl">
             {mp.problem.note}
           </p>
+        </Reveal>
+        {/* Cuadro amarillo de lo importante */}
+        <Reveal delay={0.15} className="mt-12">
+          <div className="max-w-3xl border-2 border-ink bg-accent p-7 text-ink shadow-[8px_8px_0_0_rgba(10,10,10,0.9)] md:p-9">
+            <p className="label text-ink/70">{mp.problem.callout.label}</p>
+            <p className="mt-3 text-lg font-medium leading-snug md:text-xl">{mp.problem.callout.text}</p>
+            <p className="mt-3 font-display text-2xl font-extrabold uppercase leading-tight tracking-tight md:text-3xl">
+              {mp.problem.callout.strong}
+            </p>
+          </div>
         </Reveal>
       </SectionWrapper>
 

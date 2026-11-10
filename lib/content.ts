@@ -420,12 +420,12 @@ export const marcaPersonal = {
   // Formulario de Google que filtra las consultas; los calificados agendan la llamada al final.
   applyUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdFfkGX4_WK0Vp7cEGcATmFQkyTGBW8QhT_SNra98C-ehvwVQ/viewform",
   hero: {
-    eyebrow: "Mentoría de Marca Personal",
+    eyebrow: "Diferenciate con tu marca personal",
     headline: ["Aprendé a comunicar frente a cámara.", "Convertí tus redes en una fuente de consultas."],
     subtitle:
       "Para emprendedores a los que les cuesta aparecer en redes. Salís con seguridad para comunicar y con una estrategia de contenido que te trae consultas. Todos los días trabajás con nosotros.",
     support: ["1 o 2 meses", "Seguimiento diario", "Trabajo con equipo", "Estrategia de contenido"],
-    cta: "Aplicar a la mentoría",
+    cta: "Aplicar para diferenciarme",
   },
   problem: {
     eyebrow: "El problema",
@@ -445,6 +445,11 @@ export const marcaPersonal = {
       },
     ],
     note: "El problema no es tu producto: es cómo lo comunicás.",
+    callout: {
+      label: "Importante",
+      text: "Las personas crean contenido según la motivación del momento o una idea suelta.",
+      strong: "Acá aprendés a crear contenido con un plan y una estrategia. Profesionalizá tu marca.",
+    },
   },
   audience: {
     eyebrow: "Para quién es",
@@ -459,7 +464,7 @@ export const marcaPersonal = {
   differential: {
     eyebrow: "El diferencial",
     title: "Acá aprendés a comunicar",
-    text: "Otras mentorías te enseñan a hacer contenido. Acá aprendés a comunicar, y el contenido es la consecuencia.",
+    text: "Otros programas te enseñan a hacer contenido. Acá aprendés a comunicar, y el contenido es la consecuencia.",
     extra:
       "Trabajamos para que comuniques con credibilidad, emoción y autoridad, y para que tu estilo propio te diferencie de tu competencia.",
   },
@@ -699,7 +704,7 @@ export const marcaPersonal = {
       "No publiques solo para que te vean. Publicá para que las personas correctas te descubran, entiendan qué hacés, confíen en vos y sepan cómo dar el siguiente paso.",
     title: "¿Querés aplicar?",
     text: "Completá un formulario de 5 minutos. Si hay buen encaje, te escribo por WhatsApp y coordinamos una llamada.",
-    cta: "Aplicar a la mentoría",
+    cta: "Aplicar para diferenciarme",
   },
 };
 
