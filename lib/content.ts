@@ -443,6 +443,10 @@ export const marcaPersonal = {
         title: "Todavía no ves el beneficio de aparecer",
         text: "Publicás y no pasa nada: pocas consultas, pocos contactos y cero ventas que vengan de las redes.",
       },
+      {
+        title: "No tenés una estrategia",
+        text: "Publicás cuando tenés ganas o una idea suelta, sin un plan que ordene qué decir, cuándo y para qué.",
+      },
     ],
     note: "El problema no es tu producto: es cómo lo comunicás.",
     callout: {
@@ -659,45 +663,11 @@ export const marcaPersonal = {
   communication: {
     eyebrow: "El sistema de comunicación",
     title: "El contenido funciona cuando la comunicación funciona",
-    intro:
-      "Este es el sistema con el que trabajás para comunicar con credibilidad, emoción y autoridad.",
-    items: [
-      {
-        title: "Leer a las personas y conectar",
-        text: "Aprendés a leer a las personas, conectar en minutos y comunicar tus ideas para generar confianza, ventas y contenido que funcione. El núcleo son las relaciones, la influencia y la persuasión.",
-      },
-      {
-        title: "Influencia y persuasión",
-        text: "Los principios de Cialdini aplicados a cómo hablás y a cómo construís tu contenido y tu oferta.",
-      },
-      {
-        title: "Estructura de discurso",
-        text: "Tres formas de ordenar lo que decís:",
-        bullets: [
-          "Storytelling con el método de las parábolas: una historia que deja una idea.",
-          "La estructura de la sardina (Fer Miralles).",
-          "El método simple (Alex Dey).",
-        ],
-      },
-      {
-        title: "Persuasión emocional: PAS",
-        text: "Problema, Agitación, Solución. La estructura para que tu contenido de venta conecte con lo que la persona ya siente.",
-      },
-      {
-        title: "Ley de la Práctica",
-        text: "Basada en Brian Tracy: cuanto más practicás, mejor te sale. Por eso el seguimiento es diario: la comunicación mejora haciendo, con devoluciones constantes.",
-      },
-    ] as { title: string; text: string; bullets?: string[] }[],
     pillars: [
       { title: "Credibilidad", text: "Decir lo que hacés y mostrar pruebas reales." },
       { title: "Emoción", text: "Historias y estructuras que conectan con lo que siente tu audiencia." },
       { title: "Autoridad", text: "Criterio, claridad y una forma de comunicar que es solo tuya." },
     ],
-  },
-  proof: {
-    eyebrow: "Mi trabajo",
-    title: "Lo que enseño, lo aplico todos los días",
-    text: "No te pido que me creas. Mirá cómo comunico y cómo construí mi marca en redes.",
   },
   closing: {
     quote:

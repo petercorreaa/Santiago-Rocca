@@ -1,7 +1,7 @@
-import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { SectionWrapper } from "@/components/shared/SectionWrapper";
 import { Reveal } from "@/components/shared/Reveal";
-import { marcaPersonal as mp, comunicacionSeminar } from "@/lib/content";
+import { marcaPersonal as mp } from "@/lib/content";
 
 export const metadata = {
   title: "Diferenciá tu marca personal — Santiago Rocca",
@@ -103,7 +103,7 @@ export default function MarcaPersonalPage() {
       {/* ─── 2 · EL PROBLEMA ─── */}
       <SectionWrapper variant="light">
         <SectionHeading eyebrow={mp.problem.eyebrow} title={mp.problem.title} tone="light" />
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
           {mp.problem.pains.map((pain, i) => (
             <Reveal key={pain.title} delay={i * 0.08}>
               <div className="flex h-full flex-col gap-4 rounded-sm border border-ink/10 bg-paper p-8">
@@ -395,35 +395,8 @@ export default function MarcaPersonalPage() {
           eyebrow={mp.communication.eyebrow}
           title={mp.communication.title}
           tone="light"
-          intro={mp.communication.intro}
         />
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-          {mp.communication.items.map((item, i) => (
-            <Reveal key={item.title} delay={i * 0.07}>
-              <div className="group flex h-full flex-col gap-4 rounded-sm border border-ink/10 bg-paper p-8 transition-all duration-300 hover:border-accent hover:bg-ink hover:text-white md:p-10">
-                <h3 className="font-display text-2xl font-bold uppercase tracking-tight">{item.title}</h3>
-                <p className="text-sm leading-relaxed text-ink/60 transition-colors group-hover:text-white/70 md:text-base">
-                  {item.text}
-                </p>
-                {item.bullets && (
-                  <ul className="flex flex-col gap-3">
-                    {item.bullets.map((bullet) => (
-                      <li
-                        key={bullet}
-                        className="flex items-start gap-3 text-sm leading-relaxed text-ink/70 transition-colors group-hover:text-white/70 md:text-base"
-                      >
-                        <Check size={18} strokeWidth={2.5} className="mt-0.5 shrink-0 text-brand group-hover:text-accent" />
-                        {bullet}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            </Reveal>
-          ))}
-        </div>
-
-        <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
           {mp.communication.pillars.map((pillar, i) => (
             <Reveal key={pillar.title} delay={i * 0.08}>
               <div className="h-full rounded-sm bg-ink p-8 text-white">
@@ -437,38 +410,7 @@ export default function MarcaPersonalPage() {
         </div>
       </SectionWrapper>
 
-      {/* ─── 12 · MI TRABAJO (redes reales) ─── */}
-      <SectionWrapper variant="dark">
-        <SectionHeading eyebrow={mp.proof.eyebrow} title={mp.proof.title} tone="dark" intro={mp.proof.text} />
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
-          {comunicacionSeminar.proof.links.map((link, i) => (
-            <Reveal key={link.name} delay={i * 0.08}>
-              <a
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex h-full flex-col justify-between gap-8 rounded-sm border border-ink-border bg-ink-surface p-6 transition-all duration-300 hover:border-accent"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <p className="label text-accent">{link.name}</p>
-                  <ArrowUpRight size={20} strokeWidth={1.75} className="shrink-0 text-white/30 transition-colors group-hover:text-accent" />
-                </div>
-                {link.count ? (
-                  <div>
-                    <p className="font-display text-4xl font-extrabold uppercase leading-none tracking-tight">{link.count}</p>
-                    <p className="mt-2 text-sm text-white/50">{link.unit}</p>
-                  </div>
-                ) : (
-                  <p className="font-display text-2xl font-bold uppercase tracking-tight">Ver perfil</p>
-                )}
-              </a>
-            </Reveal>
-          ))}
-        </div>
-        <p className="mt-4 text-xs text-white/40">{comunicacionSeminar.proof.updated}</p>
-      </SectionWrapper>
-
-      {/* ─── 13 · CIERRE ─── */}
+      {/* ─── 12 · CIERRE ─── */}
       <section className="w-full bg-accent text-ink">
         <div className="mx-auto w-full max-w-content px-6 py-20 md:px-8 md:py-28">
           <Reveal className="mx-auto max-w-4xl text-center">
