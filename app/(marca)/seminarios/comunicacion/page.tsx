@@ -6,7 +6,7 @@ import { comunicacionSeminar as seminar, whatsappContact, podcast } from "@/lib/
 
 export const metadata = {
   title: "Comunicación — Seminarios — Santiago Rocca",
-  description: seminar.hero.subtitle,
+  description: `${seminar.hero.subtitle} ${seminar.offer.title}. ${seminar.offer.text}`,
 };
 
 const includeIcons = [PlayCircle, Library, Wrench, Users, InfinityIcon];
@@ -47,6 +47,25 @@ export default function SeminarioComunicacionPage() {
                 </span>
               ))}
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ─── LA OFERTA (cuadro grande amarillo) ─── */}
+      <section className="w-full bg-accent text-ink">
+        <div className="mx-auto w-full max-w-content px-6 py-20 md:px-8 md:py-28">
+          <Reveal className="mx-auto max-w-5xl text-center">
+            <p className="label text-ink/60">{seminar.offer.eyebrow}</p>
+            <h2 className="mt-5 font-display text-[clamp(2.25rem,6vw,5rem)] font-extrabold uppercase leading-[0.95] tracking-hero">
+              {seminar.offer.title}
+            </h2>
+            <div className="mx-auto mt-6 h-1 w-16 bg-ink" />
+            <p className="mx-auto mt-8 max-w-3xl font-display text-2xl font-bold uppercase leading-tight tracking-tight text-ink md:text-4xl">
+              {seminar.offer.text}
+            </p>
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-ink/75 md:text-lg">
+              {seminar.offer.extra}
+            </p>
           </Reveal>
         </div>
       </section>

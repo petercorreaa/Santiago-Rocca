@@ -681,9 +681,15 @@ export const marcaPersonal = {
 export const comunicacionSeminar = {
   hero: {
     headline: ["No te eligen por lo que sabés.", "Te eligen por cómo lo comunicás."],
-    subtitle:
-      "Tenés valor para aportar, pero pasás desapercibido. Aprendé a leer a las personas, conectar y comunicar lo que valés para abrir oportunidades: clientes, ascensos y propuestas.",
+    subtitle: "Tenés valor para aportar, pero pasás desapercibido.",
     support: ["Clases grabadas", "Material de archivo", "Ejercicios", "Comunidad privada"],
+  },
+  // Cuadro grande amarillo con la oferta, justo debajo de la portada.
+  offer: {
+    eyebrow: "El seminario",
+    title: "En 5 semanas aprendé a leer a las personas, conectar y comunicar lo que valés",
+    text: "Para abrir oportunidades: clientes, ascensos y propuestas.",
+    extra: "Aprendé comunicación para leer a las personas, conectar y comunicar lo que valés, y mejorar tu comunicación.",
   },
   situations: {
     eyebrow: "Para qué te sirve",
